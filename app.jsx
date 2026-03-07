@@ -23,7 +23,7 @@ const PROJECTS = [
     title: "Landing Page Website",
     description:
       "A responsive business landing page website built with HTML, CSS, and JavaScript, featuring modern design and smooth animations.",
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["REACT"],
     image: "images/land.jpg",
     live: "https://kpz-landing-page.netlify.app/",
     github: "#",
@@ -33,9 +33,9 @@ const PROJECTS = [
     title: "Portfolio Website",
     description:
       "A mobile-first portfolio website with interactive elements and optimized performance across all devices.",
-    tech: ["HTML", "CSS", "JavaScript"],
+    tech: ["REACT"],
     image: "images/port.jpg",
-    live: "https://kpzmyportfolio.netlify.app/",
+    live: "https://portfolio-demo-rosy-ten.vercel.app/",
     github: "#",
   },
   {
