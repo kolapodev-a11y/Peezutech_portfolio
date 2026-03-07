@@ -381,8 +381,8 @@ function About() {
             simple, beautiful designs.
           </p>
           <p>
-            From crafting pixel-perfect UIs with <strong>React</strong> and CSS, to building robust
-            backends with <strong>Node.js & MongoDB</strong> — I handle the full development cycle
+            From crafting pixel-perfect UIs with <strong>React</strong>, HTML and CSS, to building robust
+            backends with <strong>Node.js & MongoDB/SQL</strong> — I handle the full development cycle
             with attention to performance and user experience.
           </p>
           <p>
