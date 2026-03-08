@@ -22,11 +22,11 @@ const PROJECTS = [
     id: 1,
     title: "Landing Page Website",
     description:
-      "A responsive business landing page website built with HTML, CSS, and JavaScript, featuring modern design and smooth animations.",
+      "A responsive business landing page website built with REACT, featuring modern design and smooth animations.",
     tech: ["REACT"],
     image: "images/land.jpg",
-    live: "https://kpz-landing-page.netlify.app/",
-    github: "#",
+    live: "https://landing-page-demo-mu-six.vercel.app/",
+    github: "https://github.com/victorkolapo84-code/Landing-page-demo",
   },
   {
     id: 2,
