@@ -36,7 +36,7 @@ const PROJECTS = [
     tech: ["REACT"],
     image: "images/port.jpg",
     live: "https://portfolio-demo-rosy-ten.vercel.app/",
-    github: "#",
+    github: "https://github.com/kolapodev-a11y/Portfolio-demo",
   },
   {
     id: 3,
