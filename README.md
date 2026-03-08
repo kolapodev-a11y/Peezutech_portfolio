@@ -49,25 +49,26 @@ portfolio-react/
 
 ---
 
-## ✉️ EmailJS Setup (Contact Form)
+## ✉️ Resend Setup (Contact Form)
 
-The contact form uses EmailJS (same as your original site).
+This version sends your contact form email using **Resend** via a **Vercel Serverless Function** at `POST /api/contact`.
 
-1. Log in at [emailjs.com](https://emailjs.com)
-2. Create an **Email Service** and get your `service_id`
-3. Create an **Email Template** and get your `template_id`
-4. Open `app.jsx`, find the `handleSubmit` function
-5. Replace `"service_id"` and `"template_id"` with your real values
+### 1) Create a Resend account + API key
+- Create an API key in your Resend dashboard.
 
-```js
-await emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
-  from_name: form.name,
-  from_email: form.email,
-  message: form.message,
-});
-```
+### 2) Add environment variables in Vercel
+In **Vercel → Project → Settings → Environment Variables**, add:
+- `RESEND_API_KEY` (required)
+- `CONTACT_TO_EMAIL` (required) → where you want to receive the messages
+- `CONTACT_FROM_EMAIL` (optional) → must be a verified sender in Resend. For testing you can use `onboarding@resend.dev`.
+- `CONTACT_SUBJECT_PREFIX` (optional)
 
-Your public key (`Gkisq4GSHGj4nx1rh`) is already included.
+### 3) Deploy to Vercel
+Because `Resend` runs server-side, the contact form **will not work if you open `index.html` directly with `file://`**.
+Deploy to Vercel (or use a Node-based dev environment) to test.
+
+### Resend API reference
+See Resend’s “Send Email” endpoint docs.
 
 ---
 
