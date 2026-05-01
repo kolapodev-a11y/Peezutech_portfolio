@@ -3,1293 +3,440 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kolapo Victor | Full-Stack Web Developer | ATS-Optimized Portfolio & Resume</title>
-  <meta name="description" content="ATS-optimized portfolio and one-page resume for Kolapo Victor, a full-stack web developer specializing in React, JavaScript, Node.js, MongoDB, responsive web design, accessibility, and recruiter-friendly project presentation." />
-  <meta name="keywords" content="Kolapo Victor, Peezutech, Full-Stack Web Developer, Frontend Developer, React Developer, JavaScript Developer, Node.js Developer, MongoDB, SQL, Responsive Web Design, Portfolio, Resume, ATS Resume, Web Developer Nigeria" />
-  <meta name="author" content="Kolapo Victor" />
+  <title>Kolapo Victor | Fullstack Web Developer | Peezutech</title>
+  <meta name="description" content="Peezutech portfolio website for Kolapo Victor, a fullstack web developer building fast, responsive websites and modern web applications." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
-  <meta name="theme-color" content="#0f3a75" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="color-scheme" content="light dark" />
   <link rel="canonical" href="https://www.peezutech.name.ng/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Kolapo Victor | Full-Stack Web Developer" />
-  <meta property="og:description" content="Professional portfolio and one-page recruiter-friendly resume for Kolapo Victor with prioritized projects, ATS keywords, and clean dark-blue branding." />
+  <meta property="og:title" content="Kolapo Victor | Fullstack Web Developer" />
+  <meta property="og:description" content="Explore projects, skills, and contact details for Kolapo Victor, a fullstack web developer at Peezutech." />
   <meta property="og:url" content="https://www.peezutech.name.ng/" />
   <meta property="og:site_name" content="Peezutech Portfolio" />
-  <meta property="og:image" content="https://www.peezutech.name.ng/images/optimized/peezuhub.webp" />
+  <meta property="og:image" content="https://www.peezutech.name.ng/images/optimized/port.webp" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Kolapo Victor | Full-Stack Web Developer" />
-  <meta name="twitter:description" content="ATS-ready portfolio and one-page resume for Kolapo Victor, full-stack web developer." />
-  <meta name="twitter:image" content="https://www.peezutech.name.ng/images/optimized/peezuhub.webp" />
-
-  <style>
-    :root {
-      --bg: #07172f;
-      --bg-soft: #0b2346;
-      --card: rgba(11, 35, 70, 0.82);
-      --card-solid: #0b2243;
-      --surface: #102d57;
-      --surface-2: #163b72;
-      --text: #edf4ff;
-      --muted: #b8c8e8;
-      --line: rgba(173, 201, 255, 0.16);
-      --primary: #1d4ed8;
-      --primary-2: #3b82f6;
-      --accent: #60a5fa;
-      --accent-soft: rgba(96, 165, 250, 0.16);
-      --success: #93c5fd;
-      --shadow: 0 24px 70px rgba(2, 8, 23, 0.45);
-      --radius-xl: 28px;
-      --radius-lg: 20px;
-      --radius-md: 14px;
-      --max: 1180px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at top right, rgba(59, 130, 246, 0.20), transparent 28%),
-        radial-gradient(circle at top left, rgba(37, 99, 235, 0.16), transparent 24%),
-        linear-gradient(180deg, #041021 0%, #07172f 30%, #061224 100%);
-      line-height: 1.6;
-    }
-
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; }
-
-    .container {
-      width: min(calc(100% - 2rem), var(--max));
-      margin: 0 auto;
-    }
-
-    .skip-link {
-      position: absolute;
-      left: -999px;
-      top: 1rem;
-      background: #fff;
-      color: #111827;
-      padding: 0.8rem 1rem;
-      border-radius: 10px;
-      z-index: 10000;
-    }
-
-    .skip-link:focus { left: 1rem; }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(16px);
-      background: rgba(4, 16, 33, 0.75);
-      border-bottom: 1px solid rgba(173, 201, 255, 0.08);
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 1rem 0;
-    }
-
-    .brand {
-      font-weight: 800;
-      letter-spacing: 0.03em;
-      color: #ffffff;
-      white-space: nowrap;
-    }
-
-    .brand span { color: var(--accent); }
-
-    .nav-links {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-      font-size: 0.95rem;
-      transition: color 0.2s ease;
-    }
-
-    .nav-links a:hover,
-    .nav-links a:focus-visible { color: #fff; }
-
-    .nav-cta,
-    .btn,
-    .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.55rem;
-      border-radius: 999px;
-      padding: 0.9rem 1.15rem;
-      font-weight: 700;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-      border: 1px solid transparent;
-      cursor: pointer;
-    }
-
-    .btn,
-    .nav-cta {
-      color: white;
-      background: linear-gradient(135deg, var(--primary), var(--primary-2));
-      box-shadow: 0 14px 34px rgba(29, 78, 216, 0.34);
-    }
-
-    .btn:hover,
-    .nav-cta:hover,
-    .btn-outline:hover { transform: translateY(-1px); }
-
-    .btn-outline {
-      color: #dbeafe;
-      border-color: rgba(147, 197, 253, 0.34);
-      background: rgba(147, 197, 253, 0.08);
-    }
-
-    section {
-      padding: 4.8rem 0;
-    }
-
-    .hero {
-      padding-top: 5.4rem;
-      padding-bottom: 3.5rem;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.35fr 0.95fr;
-      gap: 1.8rem;
-      align-items: stretch;
-    }
-
-    .hero-card,
-    .highlight-card,
-    .section-card,
-    .project-card,
-    .resume-shell,
-    .contact-card,
-    .ats-card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      box-shadow: var(--shadow);
-      border-radius: var(--radius-xl);
-    }
-
-    .hero-card {
-      padding: 2.4rem;
-      position: relative;
-      overflow: hidden;
-      isolation: isolate;
-    }
-
-    .hero-card::before {
-      content: "";
-      position: absolute;
-      inset: auto -10% -20% auto;
-      width: 250px;
-      height: 250px;
-      background: radial-gradient(circle, rgba(96, 165, 250, 0.28), transparent 68%);
-      z-index: -1;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      padding: 0.45rem 0.8rem;
-      border-radius: 999px;
-      background: rgba(147, 197, 253, 0.08);
-      border: 1px solid rgba(147, 197, 253, 0.22);
-      color: var(--success);
-      font-size: 0.92rem;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    .eyebrow::before {
-      content: "";
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #60a5fa;
-      box-shadow: 0 0 0 5px rgba(96, 165, 250, 0.12);
-    }
-
-    h1, h2, h3, h4 {
-      margin: 0;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.2rem, 6vw, 4.35rem);
-      margin-bottom: 0.85rem;
-    }
-
-    .hero h1 span,
-    .section-title span,
-    .resume-name span {
-      color: #93c5fd;
-    }
-
-    .hero-lead {
-      font-size: 1.1rem;
-      color: var(--muted);
-      max-width: 65ch;
-      margin: 1rem 0 1.35rem;
-    }
-
-    .hero-keywords {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin: 1.35rem 0 1.8rem;
-      padding: 0;
-      list-style: none;
-    }
-
-    .hero-keywords li,
-    .chip,
-    .tech {
-      border-radius: 999px;
-      border: 1px solid rgba(147, 197, 253, 0.18);
-      background: rgba(15, 58, 117, 0.42);
-      color: #dbeafe;
-      padding: 0.52rem 0.82rem;
-      font-size: 0.92rem;
-      font-weight: 600;
-    }
-
-    .hero-actions,
-    .stats,
-    .link-pills,
-    .project-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      align-items: center;
-    }
-
-    .stats {
-      margin-top: 1.8rem;
-    }
-
-    .stat {
-      min-width: 120px;
-      padding: 1rem 1.1rem;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(173, 201, 255, 0.10);
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 1.5rem;
-      color: #fff;
-    }
-
-    .stat span {
-      font-size: 0.92rem;
-      color: var(--muted);
-    }
-
-    .highlight-card {
-      padding: 1.7rem;
-      display: grid;
-      gap: 1rem;
-    }
-
-    .highlight-card h2 {
-      font-size: 1.25rem;
-      margin-bottom: 0.35rem;
-    }
-
-    .priority-list {
-      margin: 0;
-      padding-left: 1.15rem;
-      color: var(--muted);
-    }
-
-    .priority-list li + li { margin-top: 0.8rem; }
-    .priority-list strong { color: #fff; }
-
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      gap: 1rem;
-      margin-bottom: 1.8rem;
-    }
-
-    .section-kicker {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: #93c5fd;
-      margin-bottom: 0.55rem;
-      font-weight: 800;
-    }
-
-    .section-title {
-      font-size: clamp(1.8rem, 4vw, 3rem);
-      margin-bottom: 0.4rem;
-    }
-
-    .section-copy {
-      color: var(--muted);
-      max-width: 66ch;
-      margin: 0;
-    }
-
-    .about-grid,
-    .ats-grid,
-    .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.3rem;
-    }
-
-    .section-card,
-    .ats-card,
-    .contact-card {
-      padding: 1.55rem;
-    }
-
-    .section-card h3,
-    .ats-card h3,
-    .contact-card h3 {
-      margin-bottom: 0.8rem;
-      font-size: 1.15rem;
-    }
-
-    .check-list,
-    .resume-bullets,
-    .compact-list {
-      margin: 0;
-      padding-left: 1.15rem;
-      color: var(--muted);
-    }
-
-    .check-list li + li,
-    .resume-bullets li + li,
-    .compact-list li + li { margin-top: 0.55rem; }
-
-    .skills-wrap,
-    .resume-skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.65rem;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.35rem;
-    }
-
-    .project-card {
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .project-media {
-      aspect-ratio: 16 / 10;
-      overflow: hidden;
-      background: #08172f;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .project-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.35s ease;
-    }
-
-    .project-card:hover .project-media img { transform: scale(1.04); }
-
-    .project-body {
-      padding: 1.4rem;
-      display: grid;
-      gap: 0.95rem;
-      height: 100%;
-    }
-
-    .project-topline {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .priority-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 0.84rem;
-      font-weight: 800;
-      padding: 0.42rem 0.72rem;
-      border-radius: 999px;
-      background: rgba(59, 130, 246, 0.14);
-      color: #bfdbfe;
-      border: 1px solid rgba(96, 165, 250, 0.22);
-    }
-
-    .project-card h3 {
-      font-size: 1.28rem;
-    }
-
-    .project-body p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .resume-section {
-      padding-top: 5rem;
-    }
-
-    .resume-shell {
-      padding: 2rem;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)),
-        rgba(10, 28, 54, 0.94);
-    }
-
-    .resume-toolbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 1.4rem;
-    }
-
-    .resume-note {
-      color: var(--muted);
-      margin: 0;
-      font-size: 0.95rem;
-    }
-
-    .resume-paper {
-      width: min(100%, 920px);
-      margin: 0 auto;
-      background: #ffffff;
-      color: #0f172a;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 30px 80px rgba(2, 8, 23, 0.28);
-    }
-
-    .resume-header {
-      background: linear-gradient(135deg, #0f3a75, #164e98);
-      color: #ffffff;
-      padding: 2rem 2rem 1.35rem;
-    }
-
-    .resume-name {
-      font-size: clamp(1.8rem, 4vw, 2.7rem);
-      margin-bottom: 0.35rem;
-    }
-
-    .resume-role {
-      font-size: 1.04rem;
-      color: #dbeafe;
-      margin: 0 0 0.8rem;
-      font-weight: 600;
-    }
-
-    .resume-contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.55rem 1rem;
-      font-size: 0.92rem;
-      color: #eff6ff;
-    }
-
-    .resume-contact a { color: inherit; }
-
-    .resume-main {
-      display: grid;
-      grid-template-columns: 1.55fr 0.95fr;
-      gap: 0;
-    }
-
-    .resume-left,
-    .resume-right {
-      padding: 1.35rem 1.6rem 1.6rem;
-    }
-
-    .resume-right {
-      background: #f5f9ff;
-      border-left: 1px solid #dbeafe;
-    }
-
-    .resume-block + .resume-block {
-      margin-top: 1.15rem;
-    }
-
-    .resume-block h3 {
-      color: #0f3a75;
-      font-size: 0.95rem;
-      margin-bottom: 0.55rem;
-      text-transform: uppercase;
-      letter-spacing: 0.11em;
-      font-weight: 800;
-    }
-
-    .resume-block p {
-      margin: 0;
-      color: #334155;
-      font-size: 0.96rem;
-    }
-
-    .resume-project {
-      padding: 0.82rem 0;
-      border-top: 1px solid #e2e8f0;
-    }
-
-    .resume-project:first-of-type { border-top: 0; padding-top: 0; }
-
-    .resume-project h4 {
-      display: flex;
-      justify-content: space-between;
-      gap: 0.8rem;
-      align-items: flex-start;
-      font-size: 1rem;
-      margin-bottom: 0.32rem;
-      color: #0f172a;
-    }
-
-    .resume-project small {
-      color: #0f3a75;
-      font-weight: 700;
-      white-space: nowrap;
-    }
-
-    .resume-project p {
-      margin: 0 0 0.45rem;
-      color: #334155;
-      font-size: 0.94rem;
-    }
-
-    .resume-skills .chip {
-      color: #0f3a75;
-      background: #eaf2ff;
-      border-color: #c7dcff;
-      font-weight: 700;
-    }
-
-    .resume-links {
-      display: grid;
-      gap: 0.42rem;
-      font-size: 0.92rem;
-    }
-
-    .resume-links a {
-      color: #0f3a75;
-      word-break: break-word;
-    }
-
-    .contact-grid { align-items: start; }
-
-    .link-pills a {
-      padding: 0.72rem 0.94rem;
-      border-radius: 999px;
-      border: 1px solid rgba(147, 197, 253, 0.24);
-      background: rgba(147, 197, 253, 0.07);
-      color: #e0edff;
-      font-weight: 700;
-    }
-
-    .footer {
-      padding: 2rem 0 3rem;
-      color: #93a9cf;
-      text-align: center;
-      font-size: 0.94rem;
-    }
-
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-
-    @media (max-width: 980px) {
-      .hero-grid,
-      .about-grid,
-      .ats-grid,
-      .contact-grid,
-      .projects-grid,
-      .resume-main {
-        grid-template-columns: 1fr;
+  <meta name="twitter:title" content="Kolapo Victor | Fullstack Web Developer" />
+  <meta name="twitter:description" content="Portfolio website for Kolapo Victor showcasing projects, skills, and contact details." />
+  <meta name="twitter:image" content="https://www.peezutech.name.ng/images/optimized/port.webp" />
+
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        document.documentElement.setAttribute('data-theme', saved || 'light');
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
       }
-
-      .resume-right {
-        border-left: 0;
-        border-top: 1px solid #dbeafe;
-      }
-    }
-
-    @media (max-width: 720px) {
-      .nav { flex-direction: column; align-items: flex-start; }
-      .nav-links { justify-content: flex-start; }
-      .hero-card,
-      .highlight-card,
-      .resume-shell { padding: 1.35rem; }
-      .resume-paper { border-radius: 18px; }
-      .resume-header,
-      .resume-left,
-      .resume-right { padding-left: 1.1rem; padding-right: 1.1rem; }
-      section { padding: 4rem 0; }
-    }
-
-    @page {
-      size: A4;
-      margin: 10mm;
-    }
-
-    @media print {
-      body {
-        background: #ffffff !important;
-        color: #111827;
-      }
-
-      .site-header,
-      .hero,
-      .about,
-      .projects,
-      .ats-section,
-      .contact-section,
-      .footer,
-      .resume-toolbar,
-      .skip-link {
-        display: none !important;
-      }
-
-      .resume-section {
-        padding: 0 !important;
-      }
-
-      .resume-shell {
-        background: transparent !important;
-        border: 0 !important;
-        box-shadow: none !important;
-        padding: 0 !important;
-      }
-
-      .resume-paper {
-        width: 100% !important;
-        max-width: none !important;
-        border-radius: 0 !important;
-        box-shadow: none !important;
-      }
-
-      .resume-project,
-      .resume-block {
-        break-inside: avoid;
-      }
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-    }
-  </style>
+    })();
+  </script>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "name": "Kolapo Victor",
-        "alternateName": "Peezutech",
-        "jobTitle": "Full-Stack Web Developer",
-        "url": "https://www.peezutech.name.ng/",
-        "email": "mailto:kolapodev@gmail.com",
-        "telephone": "+2349050911921",
-        "sameAs": [
-          "https://github.com/kolapodev-a11y",
-          "https://www.linkedin.com/in/kolapo-ofobutu-b68892382",
-          "https://wa.me/2349050911921"
-        ],
-        "knowsAbout": [
-          "HTML5",
-          "CSS3",
-          "JavaScript",
-          "React",
-          "Node.js",
-          "Express",
-          "MongoDB",
-          "SQL",
-          "Responsive Web Design",
-          "Accessibility",
-          "Portfolio Development",
-          "Full-Stack Web Applications"
-        ]
-      },
-      {
-        "@type": "ItemList",
-        "name": "Prioritized Portfolio Projects",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "PeezuHub", "url": "https://peezuhub.name.ng"},
-          {"@type": "ListItem", "position": 2, "name": "Landing Page Website", "url": "https://landing-page-demo-mu-six.vercel.app/"},
-          {"@type": "ListItem", "position": 3, "name": "Quiz Website", "url": "https://koleepeezuquiz.name.ng"},
-          {"@type": "ListItem", "position": 4, "name": "E-commerce Website", "url": "https://fortunehub.name.ng"},
-          {"@type": "ListItem", "position": 5, "name": "Portfolio Website", "url": "https://portfolio-demo-rosy-ten.vercel.app/"},
-          {"@type": "ListItem", "position": 6, "name": "Blog Website", "url": "https://kpzblogwebsite.netlify.app/"}
-        ]
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kolapo Victor",
+      "jobTitle": "Fullstack Web Developer",
+      "url": "https://www.peezutech.name.ng/",
+      "email": "mailto:kolapodev@gmail.com",
+      "sameAs": [
+        "https://github.com/kolapodev-a11y",
+        "https://www.linkedin.com/in/kolapo-ofobutu-b68892382",
+        "https://wa.me/2349050911921"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Peezutech"
       }
-    ]
-  }
+    }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#home">&lt;<span>Peezutech</span> /&gt;</a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="#resume">View ATS Resume</a>
-      </nav>
+  <nav class="navbar" aria-label="Primary">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home" data-scroll>&lt;Peezutech /&gt;</a>
+
+      <ul class="nav-links">
+        <li><a href="#home" data-scroll class="active">Home</a></li>
+        <li><a href="#about" data-scroll>About</a></li>
+        <li><a href="#projects" data-scroll>Projects</a></li>
+        <li><a href="#contact" data-scroll>Contact</a></li>
+        <li>
+          <a href="#contact" class="nav-cta" data-scroll>Hire Me</a>
+        </li>
+        <li class="nav-theme">
+          <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" title="Dark mode" type="button">
+            <span class="theme-toggle-icon" aria-hidden="true">☀️</span>
+            <span class="theme-toggle-text">Light</span>
+          </button>
+        </li>
+      </ul>
+
+      <button class="hamburger" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-  </header>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-top">
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode" title="Dark mode" type="button">
+        <span class="theme-toggle-icon" aria-hidden="true">☀️</span>
+        <span class="theme-toggle-text">Light</span>
+      </button>
+    </div>
+
+    <a href="#home" data-scroll>Home</a>
+    <a href="#about" data-scroll>About</a>
+    <a href="#projects" data-scroll>Projects</a>
+    <a href="#contact" data-scroll>Contact</a>
+    <a href="#contact" class="mobile-hire" data-scroll>Hire Me →</a>
+  </div>
 
   <main id="main-content">
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <article class="hero-card">
-          <div class="eyebrow">Available for web development projects</div>
-          <h1>Kolapo Victor <span>Full-Stack Web Developer</span></h1>
-          <p class="hero-lead">
-            I build responsive websites and modern web applications using HTML, CSS, JavaScript, React, Node.js, MongoDB, and SQL. This updated portfolio is structured for recruiters, ATS screening, and fast project review.
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid-bg"></div>
+      <div class="hero-container">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Available for new projects
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <span class="name">Kolapo Victor</span>
+          </h1>
+
+          <h2 class="hero-subtitle">
+            <span id="typed-text">Fullstack Web Developer</span>
+            <span class="typed-cursor">|</span>
+          </h2>
+
+          <p class="hero-description">
+            I create beautiful, responsive websites and web applications that bring ideas to life —
+            with clean code and modern design.
           </p>
 
-          <ul class="hero-keywords" aria-label="Core keywords">
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>MongoDB</li>
-            <li>SQL</li>
-            <li>Responsive Design</li>
-            <li>Accessibility</li>
-            <li>Full-Stack Development</li>
-          </ul>
-
-          <div class="hero-actions">
-            <a class="btn" href="#projects">See Priority Projects</a>
-            <a class="btn-outline" href="#resume">Open One-Page Resume</a>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary" data-scroll>🚀 View My Work</a>
+            <a href="#contact" class="btn-secondary" data-scroll>💬 Get In Touch</a>
           </div>
+        </div>
 
-          <div class="stats" aria-label="Career highlights">
-            <div class="stat"><strong>6+</strong><span>Projects completed</span></div>
-            <div class="stat"><strong>2+</strong><span>Years experience</span></div>
-            <div class="stat"><strong>7+</strong><span>Skills mastered</span></div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="profile-ring">
+            <div class="profile-inner">👨‍💻</div>
+            <div class="floating-badge badge-1">⚛️ <strong>React</strong></div>
+            <div class="floating-badge badge-2">🟢 <strong>Node.js</strong></div>
+            <div class="floating-badge badge-3">🌐 <strong>Fullstack</strong></div>
           </div>
-        </article>
+        </div>
+      </div>
 
-        <aside class="highlight-card" aria-label="Recruiter summary">
-          <div>
-            <h2>Recruiter-first positioning</h2>
-            <p class="section-copy">
-              The strongest full-stack and problem-solving projects are placed first so hiring managers can quickly see technical depth, product thinking, and interface quality.
-            </p>
-          </div>
-          <ol class="priority-list">
-            <li><strong>PeezuHub</strong> — most advanced full-stack marketplace with authentication, messaging, uploads, and payments.</li>
-            <li><strong>Landing Page Website</strong> — polished React/Vite marketing build with strong visual execution.</li>
-            <li><strong>Quiz Website</strong> — interactive learning product with timed simulation flow.</li>
-            <li><strong>E-commerce Website</strong> — conversion-focused storefront and product browsing experience.</li>
-            <li><strong>Portfolio Website</strong> — personal brand and accessibility showcase.</li>
-            <li><strong>Blog Website</strong> — clean content presentation and front-end structure.</li>
-          </ol>
-        </aside>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll down</span>
+        <div class="scroll-arrow"></div>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Professional Profile</div>
-            <h2 class="section-title">Built for <span>ATS and recruiters</span></h2>
-          </div>
-          <p class="section-copy">
-            Clear headings, keyword-rich summaries, semantic HTML, structured data, and prioritized project storytelling make the portfolio easier to scan for hiring teams and applicant tracking systems.
+    <section id="about" class="about">
+      <div class="section-header reveal">
+        <div class="section-tag">Who I Am</div>
+        <h2 class="section-title">About <span>Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-block reveal">
+          <p>
+            I'm a <strong>passionate web developer</strong> with hands-on experience building modern,
+            responsive websites and full-stack web applications. I love turning complex problems into
+            simple, beautiful designs.
           </p>
+          <p>
+            From crafting pixel-perfect UIs with <strong>React</strong>, HTML and CSS, to building robust
+            backends with <strong>Node.js &amp; MongoDB/SQL</strong> — I handle the full development cycle
+            with attention to performance and user experience.
+          </p>
+          <p>
+            When I'm not coding, I'm learning new technologies and pushing the boundaries of what's
+            possible on the web.
+          </p>
+
+          <div class="stats-row">
+            <div class="stat-card">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">7+</span>
+              <span class="stat-label">Skills Mastered</span>
+            </div>
+          </div>
         </div>
 
-        <div class="about-grid">
-          <article class="section-card">
-            <h3>Professional summary</h3>
-            <p>
-              Full-stack web developer with hands-on experience creating responsive websites, front-end interfaces, and full-stack web applications. Strong with React, JavaScript, HTML5, CSS3, Node.js, MongoDB, SQL, responsive design, and accessibility. Focused on building usable digital products with clean code, modern UI, and practical user flows.
-            </p>
-          </article>
-
-          <article class="section-card">
-            <h3>Core strengths</h3>
-            <ul class="check-list">
-              <li>Responsive front-end development with accessible, mobile-friendly layouts</li>
-              <li>React and JavaScript interfaces with clean component thinking</li>
-              <li>Node.js-driven full-stack application structure</li>
-              <li>MongoDB and SQL-backed data handling for modern web apps</li>
-              <li>Portfolio, landing page, marketplace, e-commerce, blog, and quiz product builds</li>
-            </ul>
-          </article>
-
-          <article class="section-card">
-            <h3>Technical skills</h3>
-            <div class="skills-wrap" aria-label="Technical skills">
-              <span class="chip">HTML5</span>
-              <span class="chip">CSS3</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">React</span>
-              <span class="chip">Node.js</span>
-              <span class="chip">Express</span>
-              <span class="chip">MongoDB</span>
-              <span class="chip">SQL</span>
-              <span class="chip">Responsive Design</span>
-              <span class="chip">Accessibility</span>
-              <span class="chip">UI Development</span>
-              <span class="chip">Web Performance</span>
-            </div>
-          </article>
-
-          <article class="section-card">
-            <h3>What changed in this update</h3>
-            <ul class="check-list">
-              <li>Added a recruiter-ready one-page resume section inside the portfolio</li>
-              <li>Reordered projects by strongest technical and hiring value</li>
-              <li>Improved SEO and ATS readiness with metadata and structured content</li>
-              <li>Added print-friendly resume styling for clean PDF export</li>
-              <li>Kept contact links visible for fast recruiter follow-up</li>
-            </ul>
-          </article>
+        <div class="skills-block reveal">
+          <h3>🛠 Tech Stack &amp; Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item"><span class="skill-icon">🌐</span><div class="skill-info"><span class="skill-name">HTML5</span><span class="skill-level">Expert</span></div></div>
+            <div class="skill-item"><span class="skill-icon">🎨</span><div class="skill-info"><span class="skill-name">CSS3</span><span class="skill-level">Expert</span></div></div>
+            <div class="skill-item"><span class="skill-icon">⚡</span><div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-level">Advanced</span></div></div>
+            <div class="skill-item"><span class="skill-icon">⚛️</span><div class="skill-info"><span class="skill-name">React</span><span class="skill-level">Intermediate</span></div></div>
+            <div class="skill-item"><span class="skill-icon">🟢</span><div class="skill-info"><span class="skill-name">Node.js</span><span class="skill-level">Intermediate</span></div></div>
+            <div class="skill-item"><span class="skill-icon">📱</span><div class="skill-info"><span class="skill-name">Responsive Design</span><span class="skill-level">Expert</span></div></div>
+            <div class="skill-item"><span class="skill-icon">🗄️</span><div class="skill-info"><span class="skill-name">MongoDB</span><span class="skill-level">Intermediate</span></div></div>
+            <div class="skill-item"><span class="skill-icon">🛢️</span><div class="skill-info"><span class="skill-name">SQL</span><span class="skill-level">Intermediate</span></div></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="projects" id="projects">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Prioritized Portfolio</div>
-            <h2 class="section-title">Projects in <span>recommended order</span></h2>
+    
+<section id="projects" class="projects">
+  <div class="projects-container">
+    <div class="section-header reveal">
+      <div class="section-tag">Selected Work</div>
+      <h2 class="section-title">Projects That Show <span>Execution</span></h2>
+      <p class="section-copy">
+        From product marketing pages to full-stack platforms, these builds reflect responsive UI,
+        practical problem-solving, and the ability to turn ideas into usable web experiences.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card reveal">
+        <div class="project-image-wrapper">
+          <img src="images/optimized/land.webp" alt="Landing Page Website project preview" width="640" height="640" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+          <div class="project-overlay">
+            <div class="overlay-links">
+              <a href="https://landing-page-demo-mu-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn live">🔗 Live Demo</a>
+              <a href="https://github.com/victorkolapo84-code/Landing-page-demo" target="_blank" rel="noopener noreferrer" class="overlay-btn github">💻 GitHub</a>
+            </div>
           </div>
-          <p class="section-copy">
-            The most recruiter-relevant projects appear first: advanced full-stack work, product-focused interface builds, then supporting front-end projects.
-          </p>
         </div>
-
-        <div class="projects-grid">
-          <article class="project-card" aria-labelledby="project-peezuhub-title">
-            <div class="project-media">
-              <img src="https://www.peezutech.name.ng/images/optimized/peezuhub.webp" alt="PeezuHub marketplace project preview" loading="lazy" />
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <span class="priority-badge">Priority 1</span>
-                <div class="project-links">
-                  <a class="btn-outline" href="https://peezuhub.name.ng" target="_blank" rel="noopener">Live Demo</a>
-                </div>
-              </div>
-              <h3 id="project-peezuhub-title">PeezuHub</h3>
-              <p>
-                Full-stack Nigerian marketplace web application built with React, Vite, Node.js, Express, and MongoDB. Includes account creation, Google sign-in, listings, browsing by state and category, messaging, notifications, uploads, and payment capability.
-              </p>
-              <div class="skills-wrap" aria-label="PeezuHub technologies">
-                <span class="tech">React</span>
-                <span class="tech">Vite</span>
-                <span class="tech">Node.js</span>
-                <span class="tech">Express</span>
-                <span class="tech">MongoDB</span>
-                <span class="tech">Payments</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/kolapodev-a11y/PeezuHub_New/tree/main" target="_blank" rel="noopener">Frontend Code</a>
-                <a href="https://github.com/kolapodev-a11y/Peezuhub-backend/tree/main" target="_blank" rel="noopener">Backend Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" aria-labelledby="project-landing-title">
-            <div class="project-media">
-              <img src="https://www.peezutech.name.ng/images/optimized/land.webp" alt="Landing Page Website project preview" loading="lazy" />
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <span class="priority-badge">Priority 2</span>
-                <div class="project-links">
-                  <a class="btn-outline" href="https://landing-page-demo-mu-six.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
-                </div>
-              </div>
-              <h3 id="project-landing-title">Landing Page Website</h3>
-              <p>
-                Conversion-focused SaaS landing page for an AI automation product, built with React and Vite. Shows strong visual hierarchy, responsive layout structure, and polished call-to-action flow for product marketing.
-              </p>
-              <div class="skills-wrap" aria-label="Landing Page technologies">
-                <span class="tech">React</span>
-                <span class="tech">Vite</span>
-                <span class="tech">Responsive UI</span>
-                <span class="tech">Product Marketing</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/victorkolapo84-code/Landing-page-demo" target="_blank" rel="noopener">View Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" aria-labelledby="project-quiz-title">
-            <div class="project-media">
-              <img src="https://www.peezutech.name.ng/images/optimized/quiz.webp" alt="Quiz Website project preview" loading="lazy" />
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <span class="priority-badge">Priority 3</span>
-                <div class="project-links">
-                  <a class="btn-outline" href="https://koleepeezuquiz.name.ng" target="_blank" rel="noopener">Live Demo</a>
-                </div>
-              </div>
-              <h3 id="project-quiz-title">Quiz Website</h3>
-              <p>
-                Exam practice web application with multi-subject and single-subject modes, timed sessions, and JAMB-style simulation flow. Demonstrates interactive logic, structured user flow, and EdTech product thinking.
-              </p>
-              <div class="skills-wrap" aria-label="Quiz Website technologies">
-                <span class="tech">HTML</span>
-                <span class="tech">CSS</span>
-                <span class="tech">JavaScript</span>
-                <span class="tech">EdTech</span>
-              </div>
-              <div class="project-links">
-                <span aria-label="Repository private">Private repository</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" aria-labelledby="project-ecommerce-title">
-            <div class="project-media">
-              <img src="https://www.peezutech.name.ng/images/optimized/ecomm.webp" alt="E-commerce Website project preview" loading="lazy" />
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <span class="priority-badge">Priority 4</span>
-                <div class="project-links">
-                  <a class="btn-outline" href="https://fortunehub.name.ng" target="_blank" rel="noopener">Live Demo</a>
-                </div>
-              </div>
-              <h3 id="project-ecommerce-title">E-commerce Website</h3>
-              <p>
-                Responsive electronics storefront that organizes products by category, highlights featured items, and guides shoppers through a clean browsing experience designed for conversion.
-              </p>
-              <div class="skills-wrap" aria-label="E-commerce Website technologies">
-                <span class="tech">HTML</span>
-                <span class="tech">CSS</span>
-                <span class="tech">JavaScript</span>
-                <span class="tech">Responsive UI</span>
-              </div>
-              <div class="project-links">
-                <span aria-label="Repository private">Private repository</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" aria-labelledby="project-portfolio-title">
-            <div class="project-media">
-              <img src="https://www.peezutech.name.ng/images/optimized/port.webp" alt="Portfolio Website project preview" loading="lazy" />
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <span class="priority-badge">Priority 5</span>
-                <div class="project-links">
-                  <a class="btn-outline" href="https://portfolio-demo-rosy-ten.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
-                </div>
-              </div>
-              <h3 id="project-portfolio-title">Portfolio Website</h3>
-              <p>
-                Personal portfolio built to present projects, skills, and contact pathways with accessible navigation, theme switching, smooth scrolling, and mobile-first performance.
-              </p>
-              <div class="skills-wrap" aria-label="Portfolio Website technologies">
-                <span class="tech">HTML</span>
-                <span class="tech">CSS</span>
-                <span class="tech">JavaScript</span>
-                <span class="tech">Accessibility</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/kolapodev-a11y/Portfolio-demo/tree/main" target="_blank" rel="noopener">View Code</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" aria-labelledby="project-blog-title">
-            <div class="project-media">
-              <img src="https://www.peezutech.name.ng/images/optimized/blog.webp" alt="Blog Website project preview" loading="lazy" />
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <span class="priority-badge">Priority 6</span>
-                <div class="project-links">
-                  <a class="btn-outline" href="https://kpzblogwebsite.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
-                </div>
-              </div>
-              <h3 id="project-blog-title">Blog Website</h3>
-              <p>
-                Content-driven blog for productivity and encouragement, featuring structured article cards, readable layouts, and lightweight front-end interactions for a simple reading experience.
-              </p>
-              <div class="skills-wrap" aria-label="Blog Website technologies">
-                <span class="tech">HTML</span>
-                <span class="tech">CSS</span>
-                <span class="tech">JavaScript</span>
-                <span class="tech">Content UI</span>
-              </div>
-              <div class="project-links">
-                <a href="https://github.com/victorkolapo84-code/My-Blog-site" target="_blank" rel="noopener">View Code</a>
-              </div>
-            </div>
-          </article>
+        <div class="project-body">
+          <h3>Landing Page Website</h3>
+          <p>A conversion-focused SaaS landing page for an AI automation product, built with React and Vite. Highlights polished visual hierarchy, animated sections, and responsive call-to-action flow for modern product marketing.</p>
+          <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Vite</span><span class="tech-tag">Responsive UI</span><span class="tech-tag">Product Marketing</span></div>
+          <div class="project-links-row">
+            <a href="https://landing-page-demo-mu-six.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Live Demo ↗</a>
+            <a href="https://github.com/victorkolapo84-code/Landing-page-demo" target="_blank" rel="noopener noreferrer" class="project-link">👨‍💻 View Code ↗</a>
+          </div>
         </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-image-wrapper">
+          <img src="images/optimized/port.webp" alt="Portfolio Website project preview" width="640" height="640" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+          <div class="project-overlay">
+            <div class="overlay-links">
+              <a href="https://portfolio-demo-rosy-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn live">🔗 Live Demo</a>
+              <a href="https://github.com/kolapodev-a11y/Portfolio-demo/tree/main" target="_blank" rel="noopener noreferrer" class="overlay-btn github">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Portfolio Website</h3>
+          <p>A personal portfolio built to present projects, skills, and contact pathways with accessible navigation, theme switching, smooth scrolling, and mobile-first performance.</p>
+          <div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Accessibility</span></div>
+          <div class="project-links-row">
+            <a href="https://portfolio-demo-rosy-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Live Demo ↗</a>
+            <a href="https://github.com/kolapodev-a11y/Portfolio-demo/tree/main" target="_blank" rel="noopener noreferrer" class="project-link">👨‍💻 View Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-image-wrapper">
+          <img src="images/optimized/ecomm.webp" alt="E-commerce Website project preview" width="640" height="640" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+          <div class="project-overlay">
+            <div class="overlay-links">
+              <a href="https://fortunehub.name.ng" target="_blank" rel="noopener noreferrer" class="overlay-btn live">🔗 Live Demo</a>
+              <span class="overlay-btn overlay-btn--disabled github" aria-disabled="true">🔒 Private Repo</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>E-commerce Website</h3>
+          <p>A responsive electronics storefront that organizes products by category, highlights featured items, and guides shoppers through a clean browsing experience designed for conversion.</p>
+          <div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Responsive UI</span></div>
+          <div class="project-links-row">
+            <a href="https://fortunehub.name.ng" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Live Demo ↗</a>
+            <span class="project-link project-link--disabled" aria-disabled="true">🔒 Private Repo</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-image-wrapper">
+          <img src="images/optimized/blog.webp" alt="Blog Website project preview" width="640" height="640" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+          <div class="project-overlay">
+            <div class="overlay-links">
+              <a href="https://kpzblogwebsite.netlify.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn live">🔗 Live Demo</a>
+              <a href="https://github.com/victorkolapo84-code/My-Blog-site" target="_blank" rel="noopener noreferrer" class="overlay-btn github">💻 GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Blog Website</h3>
+          <p>A content-driven blog for productivity and encouragement, featuring structured article cards, readable layouts, and lightweight front-end interactions that keep the reading experience simple and fast.</p>
+          <div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Content UI</span></div>
+          <div class="project-links-row">
+            <a href="https://kpzblogwebsite.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Live Demo ↗</a>
+            <a href="https://github.com/victorkolapo84-code/My-Blog-site" target="_blank" rel="noopener noreferrer" class="project-link">👨‍💻 View Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-image-wrapper">
+          <img src="images/optimized/quiz.webp" alt="Quiz Website project preview" width="640" height="640" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+          <div class="project-overlay">
+            <div class="overlay-links">
+              <a href="https://koleepeezuquiz.name.ng" target="_blank" rel="noopener noreferrer" class="overlay-btn live">🔗 Live Demo</a>
+              <span class="overlay-btn overlay-btn--disabled github" aria-disabled="true">🔒 Private Repo</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>Quiz Website</h3>
+          <p>An exam practice web app with multi-subject and single-subject modes, timed sessions, and JAMB-style simulation flows for focused learning and self-assessment.</p>
+          <div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">EdTech</span></div>
+          <div class="project-links-row">
+            <a href="https://koleepeezuquiz.name.ng" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Live Demo ↗</a>
+            <span class="project-link project-link--disabled" aria-disabled="true">🔒 Private Repo</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-image-wrapper">
+          <img src="images/optimized/peezuhub.webp" alt="PeezuHub marketplace project preview" width="640" height="640" loading="lazy" decoding="async" fetchpriority="low" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+          <div class="project-overlay">
+            <div class="overlay-links">
+              <a href="https://peezuhub.name.ng" target="_blank" rel="noopener noreferrer" class="overlay-btn live">🔗 Live Demo</a>
+              <a href="https://github.com/kolapodev-a11y/PeezuHub_New/tree/main" target="_blank" rel="noopener noreferrer" class="overlay-btn github">🖥 Frontend</a>
+              <a href="https://github.com/kolapodev-a11y/Peezuhub-backend/tree/main" target="_blank" rel="noopener noreferrer" class="overlay-btn github">🛠 Backend</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <h3>PeezuHub</h3>
+          <p>A moderated Nigerian marketplace web app where users can create accounts, post listings, browse by state and category, and upgrade to premium placement. Built as a full-stack product with React/Vite on the frontend and a Node.js/Express/MongoDB API handling auth, Google sign-in, listings, messaging, notifications, uploads, and payments.</p>
+          <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Vite</span><span class="tech-tag">Node.js</span><span class="tech-tag">Express</span><span class="tech-tag">MongoDB</span><span class="tech-tag">Payments</span></div>
+          <div class="project-links-row">
+            <a href="https://peezuhub.name.ng" target="_blank" rel="noopener noreferrer" class="project-link">🌐 Live Demo ↗</a>
+            <a href="https://github.com/kolapodev-a11y/PeezuHub_New/tree/main" target="_blank" rel="noopener noreferrer" class="project-link">👨‍💻 Frontend Code ↗</a>
+            <a href="https://github.com/kolapodev-a11y/Peezuhub-backend/tree/main" target="_blank" rel="noopener noreferrer" class="project-link">⚙️ Backend Code ↗</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+      <div class="section-header reveal">
+        <div class="section-tag">Say Hello</div>
+        <h2 class="section-title">Get In <span>Touch</span></h2>
       </div>
-    </section>
 
-    <section class="resume-section" id="resume">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">One-Page Resume</div>
-            <h2 class="section-title">Dark-blue, <span>print-ready resume</span></h2>
-          </div>
-          <p class="section-copy">
-            This resume is intentionally simple for ATS parsing, while still looking polished for recruiter review and PDF export.
+      <div class="contact-container">
+        <div class="contact-info reveal">
+          <h3>Let's Work Together 🤝</h3>
+          <p>
+            I'm always interested in new opportunities and exciting projects. Whether you have a
+            question, a project in mind, or just want to say hi — feel free to reach out!
           </p>
+
+          <div class="contact-methods">
+            <a href="mailto:kolapodev@gmail.com" class="contact-method">
+              <div class="contact-method-icon">📧</div>
+              <div class="contact-method-text"><strong>Email</strong><span>kolapodev@gmail.com</span></div>
+            </a>
+            <a href="https://wa.me/2349050911921" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <div class="contact-method-icon">💬</div>
+              <div class="contact-method-text"><strong>WhatsApp</strong><span>Chat with me on WhatsApp</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/kolapo-ofobutu-b68892382" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <div class="contact-method-icon">💼</div>
+              <div class="contact-method-text"><strong>LinkedIn</strong><span>View LinkedIn Profile</span></div>
+            </a>
+            <a href="https://github.com/kolapodev-a11y" target="_blank" rel="noopener noreferrer" class="contact-method">
+              <div class="contact-method-icon">🌐</div>
+              <div class="contact-method-text"><strong>GitHub</strong><span>View GitHub Profile</span></div>
+            </a>
+          </div>
         </div>
 
-        <div class="resume-shell">
-          <div class="resume-toolbar">
-            <p class="resume-note">Tip: Use the button below to print or save this resume as a PDF.</p>
-            <button class="btn" type="button" onclick="window.print()">Download Resume as PDF</button>
-          </div>
-
-          <article class="resume-paper" aria-label="One-page ATS resume">
-            <header class="resume-header">
-              <h2 class="resume-name">Kolapo <span>Victor</span></h2>
-              <p class="resume-role">Full-Stack Web Developer | React, JavaScript, Node.js, MongoDB, SQL</p>
-              <div class="resume-contact">
-                <a href="/cdn-cgi/l/email-protection#52393d3e33223d36372412353f333b3e7c313d3f"><span class="__cf_email__" data-cfemail="bbd0d4d7dacbd4dfdecdfbdcd6dad2d795d8d4d6">[email&#160;protected]</span></a>
-                <span>|</span>
-                <a href="https://wa.me/2349050911921" target="_blank" rel="noopener">+234 905 091 1921</a>
-                <span>|</span>
-                <a href="https://www.peezutech.name.ng/" target="_blank" rel="noopener">www.peezutech.name.ng</a>
-              </div>
-            </header>
-
-            <div class="resume-main">
-              <div class="resume-left">
-                <section class="resume-block">
-                  <h3>Professional Summary</h3>
-                  <p>
-                    Full-stack web developer with 2+ years of hands-on experience building responsive websites and modern web applications. Skilled in React, JavaScript, HTML5, CSS3, Node.js, MongoDB, SQL, responsive design, and accessibility. Strong at turning ideas into user-friendly digital products with clean interfaces and practical front-end and back-end functionality.
-                  </p>
-                </section>
-
-                <section class="resume-block">
-                  <h3>Selected Projects</h3>
-
-                  <article class="resume-project">
-                    <h4>PeezuHub <small>Priority Project #1</small></h4>
-                    <p>Full-stack marketplace web application built with React, Vite, Node.js, Express, and MongoDB.</p>
-                    <ul class="resume-bullets">
-                      <li>Built marketplace features for account creation, browsing by state and category, and listing management.</li>
-                      <li>Implemented product capabilities including Google sign-in, messaging, notifications, uploads, and payments.</li>
-                      <li>Demonstrates strongest full-stack scope and recruiter relevance in the portfolio.</li>
-                    </ul>
-                  </article>
-
-                  <article class="resume-project">
-                    <h4>Landing Page Website <small>Priority Project #2</small></h4>
-                    <p>React and Vite marketing site for an AI automation product.</p>
-                    <ul class="resume-bullets">
-                      <li>Designed polished page structure with strong visual hierarchy and responsive call-to-action sections.</li>
-                      <li>Shows front-end quality, layout control, and product presentation skills.</li>
-                    </ul>
-                  </article>
-
-                  <article class="resume-project">
-                    <h4>Quiz Website <small>Priority Project #3</small></h4>
-                    <p>Interactive exam practice application with timed sessions and JAMB-style simulation.</p>
-                    <ul class="resume-bullets">
-                      <li>Built multi-subject and single-subject user flows for focused practice.</li>
-                      <li>Highlights JavaScript interaction, structured logic, and EdTech problem solving.</li>
-                    </ul>
-                  </article>
-
-                  <article class="resume-project">
-                    <h4>E-commerce Website <small>Priority Project #4</small></h4>
-                    <p>Responsive electronics storefront focused on product browsing and conversion-friendly presentation.</p>
-                    <ul class="resume-bullets">
-                      <li>Organized products by category and highlighted featured products in a clean shopping interface.</li>
-                      <li>Shows responsive layout execution and front-end commerce thinking.</li>
-                    </ul>
-                  </article>
-                </section>
-              </div>
-
-              <aside class="resume-right">
-                <section class="resume-block">
-                  <h3>Core Skills</h3>
-                  <div class="resume-skills">
-                    <span class="chip">HTML5</span>
-                    <span class="chip">CSS3</span>
-                    <span class="chip">JavaScript</span>
-                    <span class="chip">React</span>
-                    <span class="chip">Node.js</span>
-                    <span class="chip">Express</span>
-                    <span class="chip">MongoDB</span>
-                    <span class="chip">SQL</span>
-                    <span class="chip">Responsive Design</span>
-                    <span class="chip">Accessibility</span>
-                    <span class="chip">Web Performance</span>
-                    <span class="chip">UI Development</span>
-                  </div>
-                </section>
-
-                <section class="resume-block">
-                  <h3>Additional Projects</h3>
-                  <ul class="compact-list">
-                    <li>Portfolio Website — accessible navigation, theme switching, smooth scrolling, mobile-first performance</li>
-                    <li>Blog Website — article card layouts, readable content structure, lightweight front-end interaction</li>
-                  </ul>
-                </section>
-
-                <section class="resume-block">
-                  <h3>Professional Highlights</h3>
-                  <ul class="compact-list">
-                    <li>6+ completed projects displayed across portfolio work</li>
-                    <li>2+ years of practical web development experience</li>
-                    <li>Experience across product marketing, marketplace, EdTech, e-commerce, blog, and portfolio builds</li>
-                  </ul>
-                </section>
-
-                <section class="resume-block">
-                  <h3>Links</h3>
-                  <div class="resume-links">
-                    <a href="https://www.peezutech.name.ng/" target="_blank" rel="noopener">Portfolio: www.peezutech.name.ng</a>
-                    <a href="https://github.com/kolapodev-a11y" target="_blank" rel="noopener">GitHub: github.com/kolapodev-a11y</a>
-                    <a href="https://www.linkedin.com/in/kolapo-ofobutu-b68892382" target="_blank" rel="noopener">LinkedIn Profile</a>
-                    <a href="https://wa.me/2349050911921" target="_blank" rel="noopener">WhatsApp Contact</a>
-                  </div>
-                </section>
-              </aside>
+        <div class="contact-form-card reveal">
+          <h3>Send a Message 💌</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input id="name" name="name" type="text" placeholder="e.g. John Doe" autocomplete="name" required />
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section class="ats-section" aria-labelledby="ats-title">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">ATS Optimization</div>
-            <h2 class="section-title" id="ats-title">Why this version is <span>recruiter-friendly</span></h2>
-          </div>
-          <p class="section-copy">
-            Everything below is visible to hiring managers and supports strong screening signals without clutter.
-          </p>
-        </div>
-
-        <div class="ats-grid">
-          <article class="ats-card">
-            <h3>Portfolio improvements</h3>
-            <ul class="check-list">
-              <li>Semantic headings and clean page structure</li>
-              <li>Keyword-rich copy for full-stack developer searches</li>
-              <li>Best technical project placed first</li>
-              <li>Fast access to live demos and source code</li>
-              <li>Clear call-to-action for recruiters and clients</li>
-            </ul>
-          </article>
-
-          <article class="ats-card">
-            <h3>Resume improvements</h3>
-            <ul class="check-list">
-              <li>One-page format with standard ATS-readable sections</li>
-              <li>No unnecessary icons, columns, or tables in printed output</li>
-              <li>Relevant developer keywords repeated naturally</li>
-              <li>Project bullets focused on tools, features, and scope</li>
-              <li>Direct links to portfolio, GitHub, LinkedIn, and contact channels</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Contact</div>
-            <h2 class="section-title">Let’s build your <span>next web project</span></h2>
-          </div>
-          <p class="section-copy">
-            Recruiters, clients, and collaborators can use any of the channels below for interviews, freelance work, or project discussions.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <article class="contact-card">
-            <h3>Primary contact</h3>
-            <div class="link-pills">
-              <a href="/cdn-cgi/l/email-protection#93f8fcfff2e3fcf7f6e5d3f4fef2faffbdf0fcfe">Email</a>
-              <a href="https://wa.me/2349050911921" target="_blank" rel="noopener">WhatsApp</a>
-              <a href="https://www.linkedin.com/in/kolapo-ofobutu-b68892382" target="_blank" rel="noopener">LinkedIn</a>
-              <a href="https://github.com/kolapodev-a11y" target="_blank" rel="noopener">GitHub</a>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" placeholder="e.g. john@example.com" autocomplete="email" required />
             </div>
-          </article>
 
-          <article class="contact-card">
-            <h3>Best-fit roles</h3>
-            <ul class="check-list">
-              <li>Frontend Developer</li>
-              <li>Full-Stack Web Developer</li>
-              <li>React Developer</li>
-              <li>JavaScript Developer</li>
-              <li>Website Developer for business and product teams</li>
-            </ul>
-          </article>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit-btn" id="form-submit-btn">🚀 Send Message</button>
+          </form>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Peezutech Portfolio — Updated portfolio and one-page ATS resume for Kolapo Victor.</p>
+    <div class="footer-content">
+      <div class="footer-top">
+        <a class="footer-logo" href="#home" data-scroll>&lt;Peezutech /&gt;</a>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="#home" data-scroll>Home</a>
+          <a href="#about" data-scroll>About</a>
+          <a href="#projects" data-scroll>Projects</a>
+          <a href="#contact" data-scroll>Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © <span id="current-year"></span> Portfolio by
+          <a href="https://wa.me/2349050911921" target="_blank" rel="noopener noreferrer"> Peezutech</a>.
+          Built for speed, accessibility, and modern UX.
+        </p>
+      </div>
     </div>
   </footer>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" type="button" hidden>↑</button>
+  <div id="toast" class="toast success" hidden><span id="toast-icon">✅</span><span id="toast-message"></span></div>
+
+  <noscript>
+    <div style="padding:1rem; text-align:center; background:#fee2e2; color:#7f1d1d; font-weight:700;">
+      This portfolio works best with JavaScript enabled.
+    </div>
+  </noscript>
+
+  <script defer src="app.js"></script>
 </body>
 </html>
