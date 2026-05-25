@@ -22,10 +22,10 @@
     .filter((node) => node.closest('.nav-links, .mobile-menu, .footer-links'));
 
   const typedWords = [
-    'Fullstack Web Developer',
-    'MERN Stack Developer',
-    'React & Tailwind Builder',
-    'Problem Solver'
+    'Frontend Engineer',
+    'React & TypeScript Developer',
+    'Accessible UI Builder',
+    'Frontend Developer with Backend Knowledge'
   ];
 
   let typedWordIndex = 0;
@@ -232,7 +232,7 @@
       } catch (error) {
         const subject = encodeURIComponent(`Message from ${payload.name}`);
         const bodyText = encodeURIComponent(payload.message);
-        window.location.href = `mailto:kolapodev@gmail.com?subject=${subject}&body=${bodyText}`;
+        window.location.href = `mailto:peezutech@gmail.com?subject=${subject}&body=${bodyText}`;
         showToast("Couldn't send automatically — opening your email app instead.", 'error');
       } finally {
         submitButton.disabled = false;

@@ -1,36 +1,18 @@
 # Kolapo Victor Frontend Portfolio
 
-Production-ready portfolio source for **Kolapo Victor**, focused on frontend roles.
+Production-ready portfolio source aligned to a general-purpose frontend resume.
 
-## Positioning
+## Updated focus
 
-This version is aligned to a general-purpose frontend profile with emphasis on:
+- Frontend-first positioning
+- TypeScript added across skills, SEO, and recruiter copy
+- React, JavaScript, accessibility, and performance emphasized
+- Backend knowledge kept as supporting context
+- Contact details aligned with the uploaded resume
 
-- React
-- TypeScript
-- JavaScript
-- HTML5
-- CSS3
-- Tailwind CSS
-- REST API integration
-- Accessibility
-- Frontend performance
+## Main files
 
-## Files
-
-- `index.html` — main page structure and SEO metadata
-- `style.css` — styles and responsive layout
-- `app.js` — interaction logic, theme toggle, mobile nav, typed headline, contact form fallback
-- `api/contact.js` — serverless contact endpoint for deployment
-- `images/optimized/` — local project preview images
-
-## Notes
-
-- The site is now frontend-focused and intentionally concise.
-- TypeScript is added to the skills and positioning.
-- Existing projects remain described truthfully without falsely labeling them as TypeScript projects.
-- Contact details now follow the uploaded frontend resumes.
-
-## Deploy
-
-Deploy as a static site with the included `api/contact.js` endpoint if you want the contact form to send from the server.
+- `index.html`
+- `style.css`
+- `app.js`
+- `api/contact.js`
