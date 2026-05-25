@@ -1,177 +1,32 @@
 <!DOCTYPE html>
-
-<html data-theme="light" lang="en">
+<html lang="en" data-theme="light">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Kolapo Victor | React Frontend Developer | JavaScript, HTML, CSS, API-Driven UI Portfolio</title>
-<meta content="Kolapo Victor is a React frontend developer who builds responsive, accessible, and API-driven web interfaces with React, JavaScript, HTML, CSS, Tailwind CSS, and full-stack MERN support." name="description"/>
-<meta content="Kolapo Victor, Peezutech, React frontend developer, frontend developer, JavaScript developer, HTML5, CSS3, Tailwind CSS, responsive web design, REST API integration, accessibility, frontend performance, MERN developer, web portfolio" name="keywords"/>
-<meta content="Kolapo Victor" name="author"/>
-<meta content="Peezutech" name="creator"/>
-<meta content="index,follow,max-image-preview:large" name="robots"/>
-<meta content="#2563eb" name="theme-color"/>
-<meta content="light dark" name="color-scheme"/>
-<link href="https://www.peezutech.name.ng/" rel="canonical"/>
-<meta content="website" property="og:type"/>
-<meta content="Kolapo Victor | React Frontend Developer" property="og:title"/>
-<meta content="Portfolio for Kolapo Victor featuring React UI work, responsive frontend projects, API integration, accessibility, and full-stack MERN support." property="og:description"/>
-<meta content="https://www.peezutech.name.ng/" property="og:url"/>
-<meta content="Peezutech Portfolio" property="og:site_name"/>
-<meta content="https://www.peezutech.name.ng/images/optimized/port.webp" property="og:image"/>
-<meta content="Kolapo Victor portfolio preview" property="og:image:alt"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Kolapo Victor | React Frontend Developer" name="twitter:title"/>
-<meta content="React frontend portfolio showcasing responsive UI, JavaScript, Tailwind CSS, API integration, accessibility, and product-focused web projects." name="twitter:description"/>
-<meta content="https://www.peezutech.name.ng/images/optimized/port.webp" name="twitter:image"/>
-<link as="style" href="style.css" rel="preload"/>
-<link href="style.css" rel="stylesheet"/>
-<style>
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kolapo Victor | Frontend Developer | React, TypeScript, JavaScript</title>
+  <meta name="description" content="Kolapo Victor is a frontend developer building responsive, accessible, and high-performing web interfaces with React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, and API-driven UI workflows." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="canonical" href="https://www.peezutech.name.ng/" />
 
-    .hero-summary-list,
-    .quick-list,
-    .project-highlights,
-    .recruiter-checklist {
-      margin: 1rem 0 0;
-      padding-left: 1.1rem;
-      display: grid;
-      gap: 0.5rem;
-    }
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kolapo Victor | Frontend Developer" />
+  <meta property="og:description" content="Frontend portfolio focused on React, TypeScript, JavaScript, responsive UI, accessibility, and product-focused web interfaces." />
+  <meta property="og:url" content="https://www.peezutech.name.ng/" />
+  <meta property="og:site_name" content="Peezutech Portfolio" />
+  <meta property="og:image" content="https://www.peezutech.name.ng/images/optimized/peezuhub.webp" />
+  <meta property="og:image:alt" content="PeezuHub frontend project preview" />
 
-    .hero-summary-list li,
-    .quick-list li,
-    .project-highlights li,
-    .recruiter-checklist li {
-      line-height: 1.6;
-    }
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kolapo Victor | Frontend Developer" />
+  <meta name="twitter:description" content="React and TypeScript-focused frontend portfolio with responsive UI and product-driven web projects." />
+  <meta name="twitter:image" content="https://www.peezutech.name.ng/images/optimized/peezuhub.webp" />
 
-    .hero-keywords,
-    .recruiter-tags,
-    .tech-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.65rem;
-      margin-top: 1.25rem;
-    }
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="stylesheet" href="style.css" />
 
-    .hero-keywords span,
-    .recruiter-tags span,
-    .priority-badge,
-    .project-rank {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.5rem 0.85rem;
-      border-radius: 999px;
-      border: 1px solid rgba(37, 99, 235, 0.18);
-      background: rgba(37, 99, 235, 0.09);
-      color: inherit;
-      font-size: 0.92rem;
-      font-weight: 600;
-    }
-
-    .snapshot {
-      padding: 2rem 1.25rem 0;
-    }
-
-    .snapshot-grid {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1rem;
-    }
-
-    .snapshot-card,
-    .recruiter-note {
-      background: rgba(15, 23, 42, 0.03);
-      border: 1px solid rgba(148, 163, 184, 0.2);
-      border-radius: 1rem;
-      padding: 1.25rem;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
-    }
-
-    [data-theme="dark"] .snapshot-card,
-    [data-theme="dark"] .recruiter-note {
-      background: rgba(148, 163, 184, 0.08);
-      border-color: rgba(148, 163, 184, 0.18);
-      box-shadow: none;
-    }
-
-    .snapshot-card h3,
-    .recruiter-note h3,
-    .project-body h3 {
-      margin-bottom: 0.75rem;
-    }
-
-    .snapshot-card p,
-    .recruiter-note p,
-    .project-body p,
-    .section-copy {
-      line-height: 1.7;
-    }
-
-    .recruiter-note {
-      margin-top: 1.25rem;
-    }
-
-    .projects-priority-copy {
-      max-width: 900px;
-      margin: 0.75rem auto 0;
-      text-align: center;
-      line-height: 1.7;
-    }
-
-    .project-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-bottom: 0.9rem;
-    }
-
-    .project-body .priority-badge,
-    .project-body .project-rank {
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-
-    .contact-lead {
-      margin-top: 0.75rem;
-      max-width: 760px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      line-height: 1.7;
-    }
-
-    .ats-summary {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 1.25rem 2rem;
-    }
-
-    .recruiter-note strong {
-      color: inherit;
-    }
-
-    @media (max-width: 768px) {
-      .snapshot {
-        padding-top: 1rem;
-      }
-    }
-  </style>
-<script>
+  <script>
     (function () {
       try {
         var saved = localStorage.getItem('theme');
@@ -181,523 +36,343 @@
       }
     })();
   </script>
-<script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@graph": [
+
+  <script type="application/ld+json">
     {
+      "@context": "https://schema.org",
       "@type": "Person",
       "name": "Kolapo Victor",
-      "jobTitle": "React Frontend Developer",
-      "description": "React frontend developer specializing in responsive UI, accessibility, modern JavaScript, HTML, CSS, Tailwind CSS, API integration, and full-stack MERN collaboration for product-focused web experiences.",
+      "jobTitle": "Frontend Developer",
       "url": "https://www.peezutech.name.ng/",
-      "email": "mailto:kolapodev@gmail.com",
+      "email": "mailto:peezutech@gmail.com",
+      "telephone": "+2348069433374",
       "sameAs": [
         "https://github.com/kolapodev-a11y",
         "https://www.linkedin.com/in/kolapo-ofobutu-b68892382",
-        "https://wa.me/2349050911921"
+        "https://wa.me/2348069433374"
       ],
       "knowsAbout": [
         "React",
+        "TypeScript",
         "JavaScript",
         "HTML5",
         "CSS3",
         "Tailwind CSS",
+        "REST APIs",
         "Responsive Web Design",
-        "REST API Integration",
-        "Web Accessibility",
+        "Accessibility",
         "Frontend Performance",
-        "Node.js",
-        "Express",
-        "MongoDB"
-      ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Peezutech"
-      }
-    },
-    {
-      "@type": "ItemList",
-      "name": "Portfolio Projects Ordered by Priority",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "SoftwareApplication",
-            "name": "PeezuHub",
-            "applicationCategory": "Marketplace Web Application",
-            "url": "https://peezuhub.name.ng",
-            "codeRepository": "https://github.com/kolapodev-a11y/PeezuHub_New/tree/main",
-            "description": "React marketplace frontend with responsive UI, listings, search, messaging flows, and API-backed full-stack integration using Vite, Tailwind CSS, Node.js, Express, and MongoDB."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "SoftwareApplication",
-            "name": "Landing Page Website",
-            "applicationCategory": "Marketing Website",
-            "url": "https://landing-page-demo-mu-six.vercel.app/",
-            "codeRepository": "https://github.com/victorkolapo84-code/Landing-page-demo",
-            "description": "React and Tailwind CSS landing page focused on component-based UI, responsive sections, visual hierarchy, and conversion-driven product presentation."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "SoftwareApplication",
-            "name": "Fortunehub's Hub E-commerce Website",
-            "applicationCategory": "E-commerce Web Application",
-            "url": "https://fortunehub.name.ng",
-            "description": "Responsive e-commerce website for the Nigerian market with storefront UI, checkout-related workflows, admin approval, manual payment verification, and email notifications."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "SoftwareApplication",
-            "name": "Quiz Website",
-            "applicationCategory": "Education Web Application",
-            "url": "https://koleepeezuquiz.name.ng",
-            "description": "Interactive JavaScript quiz application with timed sessions, multi-subject modes, and exam simulation flows."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "SoftwareApplication",
-            "name": "Portfolio Website",
-            "applicationCategory": "Developer Portfolio",
-            "url": "https://portfolio-demo-rosy-ten.vercel.app/",
-            "codeRepository": "https://github.com/kolapodev-a11y/Portfolio-demo/tree/main",
-            "description": "Accessible portfolio website with semantic HTML, responsive layout, theme switching, and smooth navigation."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "item": {
-            "@type": "SoftwareApplication",
-            "name": "Blog Website",
-            "applicationCategory": "Content Website",
-            "url": "https://kpzblogwebsite.netlify.app/",
-            "codeRepository": "https://github.com/victorkolapo84-code/My-Blog-site",
-            "description": "Content-focused blog interface with card-based layouts, lightweight interactions, and readable article presentation."
-          }
-        }
+        "Vite",
+        "Git"
       ]
     }
-  ]
-}</script>
+  </script>
 </head>
 <body>
-<a class="skip-link" href="#main-content">Skip to content</a>
-<nav aria-label="Primary" class="navbar">
-<div class="nav-container">
-<a class="nav-logo" data-scroll="" href="#home">&lt;Peezutech /&gt;</a>
-<ul class="nav-links">
-<li><a class="active" data-scroll="" href="#home">Home</a></li>
-<li><a data-scroll="" href="#snapshot">Highlights</a></li>
-<li><a data-scroll="" href="#about">About</a></li>
-<li><a data-scroll="" href="#projects">Projects</a></li>
-<li><a data-scroll="" href="#contact">Contact</a></li>
-<li>
-<a class="nav-cta" data-scroll="" href="#contact">Hire Me</a>
-</li>
-<li class="nav-theme">
-<button aria-label="Switch to dark mode" class="theme-toggle" data-theme-toggle="" title="Dark mode" type="button">
-<span aria-hidden="true" class="theme-toggle-icon">☀️</span>
-<span class="theme-toggle-text">Light</span>
-</button>
-</li>
-</ul>
-<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu" class="hamburger" data-menu-toggle="" type="button">
-<span></span>
-<span></span>
-<span></span>
-</button>
-</div>
-</nav>
-<div class="mobile-menu" id="mobile-menu">
-<div class="mobile-menu-top">
-<button aria-label="Switch to dark mode" class="theme-toggle" data-theme-toggle="" title="Dark mode" type="button">
-<span aria-hidden="true" class="theme-toggle-icon">☀️</span>
-<span class="theme-toggle-text">Light</span>
-</button>
-</div>
-<a data-scroll="" href="#home">Home</a>
-<a data-scroll="" href="#snapshot">Highlights</a>
-<a data-scroll="" href="#about">About</a>
-<a data-scroll="" href="#projects">Projects</a>
-<a data-scroll="" href="#contact">Contact</a>
-<a class="mobile-hire" data-scroll="" href="#contact">Hire Me →</a>
-</div>
-<main id="main-content">
-<section class="hero" id="home">
-<div class="hero-bg"></div>
-<div class="hero-grid-bg"></div>
-<div class="hero-container">
-<div class="hero-text">
-<div class="hero-badge"><span class="dot"></span> Available for React frontend and product UI opportunities</div>
-<h1 class="hero-title">
-            Hello, I'm <span class="name">Kolapo Victor</span>
-</h1>
-<h2 class="hero-subtitle">
-<span id="typed-text">React Frontend Developer</span>
-<span class="typed-cursor">|</span>
-</h2>
-<p class="hero-description">I build responsive, accessible, and API-driven interfaces with <strong>React</strong>, <strong>JavaScript</strong>, <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>Tailwind CSS</strong>. My strongest value is turning product ideas into clean user experiences, while my full-stack MERN background helps me integrate confidently with backend services when needed.</p>
-<ul aria-label="Professional highlights" class="hero-summary-list"><li>Built live product interfaces across marketplace, e-commerce, SaaS marketing, portfolio, and education use cases.</li><li>Strong in semantic HTML, responsive layouts, accessibility, modern JavaScript, and polished React UI implementation.</li><li>Comfortable integrating frontend experiences with APIs, authentication flows, and backend-supported product workflows.</li></ul>
-<div aria-label="Core keyword highlights" class="hero-keywords"><span>React</span><span>JavaScript</span><span>HTML5/CSS3</span><span>Responsive UI</span><span>API Integration</span><span>Accessibility</span><span>Performance</span></div>
-<div aria-label="Target role keywords" class="recruiter-tags"><span>Frontend Developer</span><span>React Developer</span><span>JavaScript Developer</span><span>Full-Stack Support</span></div>
-<div class="hero-buttons">
-<a class="btn-primary" data-scroll="" href="#projects">🚀 View Projects</a>
-<a class="btn-secondary" href="/cdn-cgi/l/email-protection#dcb7b3b0bdacb3b8b9aa9cbbb1bdb5b0f2bfb3b1">💬 Email Me</a>
-</div>
-</div>
-<div aria-hidden="true" class="hero-visual">
-<div class="profile-ring">
-<div class="profile-inner">👨‍💻</div>
-<div class="floating-badge badge-1">⚛️ <strong>React</strong></div>
-<div class="floating-badge badge-2">🟨 <strong>JavaScript</strong></div>
-<div class="floating-badge badge-3">📱 <strong>Responsive UI</strong></div>
-<div class="floating-badge badge-4">🔌 <strong>API Integration</strong></div>
-</div>
-</div>
-</div>
-<div aria-hidden="true" class="scroll-indicator">
-<span>Scroll down</span>
-<div class="scroll-arrow"></div>
-</div>
-</section>
-<section aria-labelledby="snapshot-title" class="snapshot" id="snapshot">
-<div class="section-header reveal">
-<div class="section-tag">Quick Overview</div>
-<h2 class="section-title" id="snapshot-title">What I <span>Bring</span></h2>
-<p class="section-copy">
-          This section gives a clear recruiter-friendly overview of my target roles, technical strengths, and the products I build best.
-        </p>
-</div>
-<div class="snapshot-grid">
-<article class="snapshot-card reveal">
-<h3>Target Roles</h3>
-<p>Frontend Developer, React Developer, UI Engineer, and product-focused JavaScript roles.</p>
-</article>
-<article class="snapshot-card reveal">
-<h3>Core Frontend Stack</h3>
-<p>React, Vite, Tailwind CSS, JavaScript, HTML5, CSS3, REST API integration, responsive design, accessibility, and performance-aware UI development.</p>
-</article>
-<article class="snapshot-card reveal">
-<h3>Best Fit Projects</h3>
-<p>Marketplace interfaces, e-commerce frontends, marketing websites, portfolios, and interactive learning applications with real user flows.</p>
-</article>
-</div>
-</section>
-<section class="about" id="about">
-<div class="section-header reveal">
-<div class="section-tag">Who I Am</div>
-<h2 class="section-title">About <span>Me</span></h2>
-</div>
-<div class="about-grid">
-<div class="about-text-block reveal">
-<p>I'm a React-focused frontend developer who enjoys building modern, responsive, and usable digital experiences that feel clear and intuitive to users.</p>
-<p>My frontend work emphasizes semantic HTML, accessible UI, responsive layouts, modern JavaScript, Tailwind CSS, and clean component-driven implementation. I also bring full-stack MERN experience, which helps me work smoothly with APIs, authentication, and backend-supported features.</p>
-<p>I'm especially interested in opportunities where I can contribute to product teams, improve user experience, debug interface issues, and keep growing as a strong frontend engineer.</p>
-<h3>Core Competencies</h3>
-<ul aria-label="Core competencies" class="quick-list"><li>Frontend development with React, JavaScript, HTML5, CSS3, Tailwind CSS, and responsive UI systems</li><li>API integration, debugging, accessibility, and performance-minded implementation for product interfaces</li><li>Full-stack collaboration with Node.js, Express, MongoDB, authentication, and workflow-driven features when needed</li></ul>
-<div class="stats-row">
-<div class="stat-card">
-<span class="stat-number">6+</span>
-<span class="stat-label">Projects Completed</span>
-</div>
-<div class="stat-card">
-<span class="stat-number">2+</span>
-<span class="stat-label">Years Experience</span>
-</div>
-<div class="stat-card">
-<span class="stat-number">10+</span>
-<span class="stat-label">Skills Mastered</span>
-</div>
-</div>
-</div>
-<div class="skills-block reveal">
-<h3>🛠 Tech Stack &amp; Skills</h3>
-<div class="skills-grid"><div class="skill-item"><span class="skill-icon">🌐</span><div class="skill-info"><span class="skill-name">HTML5</span><span class="skill-level">Expert</span></div></div><div class="skill-item"><span class="skill-icon">🎨</span><div class="skill-info"><span class="skill-name">CSS3</span><span class="skill-level">Expert</span></div></div><div class="skill-item"><span class="skill-icon">⚡</span><div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-level">Advanced</span></div></div><div class="skill-item"><span class="skill-icon">⚛️</span><div class="skill-info"><span class="skill-name">React</span><span class="skill-level">Advanced</span></div></div><div class="skill-item"><span class="skill-icon">💨</span><div class="skill-info"><span class="skill-name">Tailwind CSS</span><span class="skill-level">Advanced</span></div></div><div class="skill-item"><span class="skill-icon">🔌</span><div class="skill-info"><span class="skill-name">REST APIs</span><span class="skill-level">Advanced</span></div></div><div class="skill-item"><span class="skill-icon">♿</span><div class="skill-info"><span class="skill-name">Accessibility</span><span class="skill-level">Advanced</span></div></div><div class="skill-item"><span class="skill-icon">📱</span><div class="skill-info"><span class="skill-name">Responsive Design</span><span class="skill-level">Expert</span></div></div><div class="skill-item"><span class="skill-icon">🟢</span><div class="skill-info"><span class="skill-name">Node.js</span><span class="skill-level">Intermediate</span></div></div><div class="skill-item"><span class="skill-icon">🧩</span><div class="skill-info"><span class="skill-name">Express</span><span class="skill-level">Intermediate</span></div></div><div class="skill-item"><span class="skill-icon">🗄️</span><div class="skill-info"><span class="skill-name">MongoDB</span><span class="skill-level">Intermediate</span></div></div><div class="skill-item"><span class="skill-icon">🚀</span><div class="skill-info"><span class="skill-name">Performance</span><span class="skill-level">Intermediate</span></div></div></div>
-</div>
-</div>
-<div class="ats-summary">
-<article aria-labelledby="recruiter-summary-title" class="recruiter-note reveal">
-<h3 id="recruiter-summary-title">Recruiter Summary</h3>
-<p>I am best positioned for roles that value strong React frontend execution, responsive user interfaces, accessibility awareness, API integration, and the ability to contribute across product teams.</p>
-<ul aria-label="Recruiter summary points" class="recruiter-checklist"><li><strong>Best evidence:</strong> live product interfaces with real marketplace, e-commerce, and marketing flows</li><li><strong>Frontend strengths:</strong> React, JavaScript, responsive layouts, semantic HTML, Tailwind CSS, accessibility, and polished UI</li><li><strong>Support strengths:</strong> API integration, authentication flows, Node.js, Express, MongoDB, and backend-aware collaboration</li></ul>
-<div aria-label="Recruiter quick tags" class="recruiter-tags"><span>React Ready</span><span>ATS Friendly</span><span>Responsive UI</span><span>API Driven</span></div>
-</article>
-</div>
-</section>
-<section aria-label="ATS Resume Summary" class="sr-only">
-<h2>Professional Summary</h2>
-<p>Kolapo Victor is a React frontend developer with experience building responsive websites and product interfaces using React, JavaScript, HTML, CSS, Tailwind CSS, REST API integration, accessibility, and full-stack MERN support.</p>
-<h2>Target Roles</h2>
-<p>Frontend Developer, React Developer, JavaScript Developer, UI Engineer, and Frontend-focused Full-Stack Developer.</p>
-<h2>Technical Skills</h2>
-<p>React, Vite, Tailwind CSS, JavaScript, HTML5, CSS3, REST API integration, responsive web design, accessibility, semantic HTML, frontend performance, Node.js, Express, MongoDB, and MERN stack collaboration.</p>
-<h2>Priority Projects</h2>
-<p>PeezuHub React marketplace interface, Landing Page Website, Fortunehub's Hub e-commerce website, Quiz Website, Portfolio Website, Blog Website.</p>
-<h2>Contact</h2>
-<p>Email: [email protected]. GitHub: https://github.com/kolapodev-a11y. LinkedIn: https://www.linkedin.com/in/kolapo-ofobutu-b68892382. WhatsApp: https://wa.me/2349050911921.</p>
-</section>
-<section aria-labelledby="projects-title" class="projects" id="projects">
-<div class="projects-container">
-<div class="section-header reveal">
-<div class="section-tag">Selected Work</div>
-<h2 class="section-title" id="projects-title">Featured <span>Projects</span></h2>
-<p class="section-copy">These projects are ordered to balance React-first frontend evidence with strong product depth, so hiring teams quickly see both UI skill and real-world implementation.</p>
-<p class="projects-priority-copy">Priority is based on frontend relevance, product complexity, UI quality, API-driven functionality, and how well each project supports React-focused hiring decisions.</p>
-</div>
-<div class="projects-grid">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
+  <nav class="navbar" aria-label="Primary">
+    <div class="nav-container">
+      <a class="nav-logo" href="#home" data-scroll>&lt;Peezutech /&gt;</a>
 
+      <ul class="nav-links">
+        <li><a href="#home" data-scroll class="active">Home</a></li>
+        <li><a href="#about" data-scroll>About</a></li>
+        <li><a href="#skills" data-scroll>Skills</a></li>
+        <li><a href="#projects" data-scroll>Projects</a></li>
+        <li><a href="#contact" data-scroll>Contact</a></li>
+        <li class="nav-theme">
+          <button class="theme-toggle" data-theme-toggle aria-label="Switch theme" title="Toggle theme" type="button">
+            <span class="theme-toggle-icon" aria-hidden="true">☀️</span>
+            <span class="theme-toggle-text">Light</span>
+          </button>
+        </li>
+      </ul>
 
-
-
-
-<article class="project-card reveal">
-<div class="project-image-wrapper">
-<img alt="PeezuHub marketplace project preview" decoding="async" fetchpriority="high" height="640" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="images/optimized/peezuhub.webp" width="640"/>
-<div class="project-overlay">
-<div class="overlay-links">
-<a class="overlay-btn live" href="https://peezuhub.name.ng" rel="noopener noreferrer" target="_blank">🔗 Live Demo</a>
-<a class="overlay-btn github" href="https://github.com/kolapodev-a11y/PeezuHub_New/tree/main" rel="noopener noreferrer" target="_blank">🖥 Frontend</a>
-<a class="overlay-btn github" href="https://github.com/kolapodev-a11y/Peezuhub-backend/tree/main" rel="noopener noreferrer" target="_blank">🛠 Backend</a>
-</div>
-</div>
-</div>
-<div class="project-body">
-<div class="project-meta">
-<span class="project-rank">Priority 1</span>
-<span class="priority-badge">React Product UI + Full-Stack Integration</span>
-</div>
-<h3>PeezuHub</h3>
-<p>A React marketplace experience built with Vite and Tailwind CSS, backed by Node.js, Express, and MongoDB. It includes authentication, Google sign-in, listing management, search and browsing by state and category, messaging, notifications, image uploads, and premium payment workflows.</p>
-<ul aria-label="PeezuHub highlights" class="project-highlights"><li>Strongest proof of responsive React UI work connected to real product flows and backend services</li><li>Shows API-aware frontend thinking, user journeys, and end-to-end feature integration in a live application</li></ul>
-<div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Vite</span><span class="tech-tag">Tailwind CSS</span><span class="tech-tag">Responsive UI</span><span class="tech-tag">API Integration</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span></div>
-<div class="project-links-row">
-<a aria-label="View PeezuHub live demo" class="project-link" href="https://peezuhub.name.ng" rel="noopener noreferrer" target="_blank">🌐 Live Demo ↗</a>
-<a aria-label="View PeezuHub frontend code" class="project-link" href="https://github.com/kolapodev-a11y/PeezuHub_New/tree/main" rel="noopener noreferrer" target="_blank">👨‍💻 Frontend Code ↗</a>
-<a aria-label="View PeezuHub backend code" class="project-link" href="https://github.com/kolapodev-a11y/Peezuhub-backend/tree/main" rel="noopener noreferrer" target="_blank">⚙️ Backend Code ↗</a>
-</div>
-</div>
-</article><article class="project-card reveal">
-<div class="project-image-wrapper">
-<img alt="Landing Page Website project preview" decoding="async" fetchpriority="low" height="640" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="images/optimized/land.webp" width="640"/>
-<div class="project-overlay">
-<div class="overlay-links">
-<a class="overlay-btn live" href="https://landing-page-demo-mu-six.vercel.app/" rel="noopener noreferrer" target="_blank">🔗 Live Demo</a>
-<a class="overlay-btn github" href="https://github.com/victorkolapo84-code/Landing-page-demo" rel="noopener noreferrer" target="_blank">💻 GitHub</a>
-</div>
-</div>
-</div>
-<div class="project-body">
-<div class="project-meta">
-<span class="project-rank">Priority 2</span>
-<span class="priority-badge">Frontend Marketing Site</span>
-</div>
-<h3>Landing Page Website</h3>
-<p>A conversion-focused SaaS landing page built with React, Vite, and Tailwind CSS. This project highlights component-based UI development, polished visual hierarchy, responsive sections, and clean call-to-action flow designed for product marketing and user conversion.</p>
-<ul aria-label="Landing Page Website highlights" class="project-highlights"><li>Pure frontend evidence for React, layout polish, and responsive implementation</li><li>Strong signal for startup, product, and marketing-focused frontend teams</li></ul>
-<div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Vite</span><span class="tech-tag">Tailwind CSS</span><span class="tech-tag">Responsive UI</span><span class="tech-tag">Component UI</span><span class="tech-tag">Product Marketing</span></div>
-<div class="project-links-row">
-<a class="project-link" href="https://landing-page-demo-mu-six.vercel.app/" rel="noopener noreferrer" target="_blank">🌐 Live Demo ↗</a>
-<a class="project-link" href="https://github.com/victorkolapo84-code/Landing-page-demo" rel="noopener noreferrer" target="_blank">👨‍💻 View Code ↗</a>
-</div>
-</div>
-</article><article class="project-card reveal">
-<div class="project-image-wrapper">
-<img alt="Fortunehub's Hub E-commerce Website project preview" decoding="async" fetchpriority="high" height="640" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="images/optimized/ecomm.webp" width="640"/>
-<div class="project-overlay">
-<div class="overlay-links">
-<a class="overlay-btn live" href="https://fortunehub.name.ng" rel="noopener noreferrer" target="_blank">🔗 Live Demo</a>
-<span aria-disabled="true" class="overlay-btn overlay-btn--disabled github">🔒 Private Repo</span>
-</div>
-</div>
-</div>
-<div class="project-body">
-<div class="project-meta">
-<span class="project-rank">Priority 3</span>
-<span class="priority-badge">E-commerce UI + Product Workflow</span>
-</div>
-<h3>Fortunehub's Hub E-commerce Website</h3>
-<p>Built a responsive e-commerce platform for the Nigerian market using HTML, CSS, JavaScript, Node.js, and MongoDB. It includes storefront browsing, manual payment verification, receipt upload handling, admin approval workflows, automated email notifications, SEO optimization, and mobile-first design.</p>
-<ul aria-label="Fortunehub highlights" class="project-highlights"><li>Shows practical business UI thinking across storefront, checkout-related, and admin-supported flows</li><li>Demonstrates frontend execution backed by real operational workflow requirements</li></ul>
-<div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Responsive UI</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">E-commerce</span></div>
-<div class="project-links-row">
-<a class="project-link" href="https://fortunehub.name.ng" rel="noopener noreferrer" target="_blank">🌐 Live Demo ↗</a>
-<span aria-disabled="true" class="project-link project-link--disabled">🔒 Private Repo</span>
-</div>
-</div>
-</article><article class="project-card reveal">
-<div class="project-image-wrapper">
-<img alt="Quiz Website project preview" decoding="async" fetchpriority="low" height="640" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="images/optimized/quiz.webp" width="640"/>
-<div class="project-overlay">
-<div class="overlay-links">
-<a class="overlay-btn live" href="https://koleepeezuquiz.name.ng" rel="noopener noreferrer" target="_blank">🔗 Live Demo</a>
-<span aria-disabled="true" class="overlay-btn overlay-btn--disabled github">🔒 Private Repo</span>
-</div>
-</div>
-</div>
-<div class="project-body">
-<div class="project-meta">
-<span class="project-rank">Priority 4</span>
-<span class="priority-badge">Interactive Learning App</span>
-</div>
-<h3>Quiz Website</h3>
-<p>An interactive exam practice web application built with HTML, CSS, and JavaScript. It supports multi-subject and single-subject modes, timed sessions, score-based interaction, and JAMB-style simulation flows for focused learning.</p>
-<ul aria-label="Quiz Website highlights" class="project-highlights"><li>Shows application logic, state-driven UI behavior, and user-focused front-end interactions</li><li>Highlights ability to build functional learning experiences beyond static pages</li></ul>
-<div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">State Logic</span><span class="tech-tag">EdTech</span></div>
-<div class="project-links-row">
-<a class="project-link" href="https://koleepeezuquiz.name.ng" rel="noopener noreferrer" target="_blank">🌐 Live Demo ↗</a>
-<span aria-disabled="true" class="project-link project-link--disabled">🔒 Private Repo</span>
-</div>
-</div>
-</article><article class="project-card reveal">
-<div class="project-image-wrapper">
-<img alt="Portfolio Website project preview" decoding="async" fetchpriority="low" height="640" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="images/optimized/port.webp" width="640"/>
-<div class="project-overlay">
-<div class="overlay-links">
-<a class="overlay-btn live" href="https://portfolio-demo-rosy-ten.vercel.app/" rel="noopener noreferrer" target="_blank">🔗 Live Demo</a>
-<a class="overlay-btn github" href="https://github.com/kolapodev-a11y/Portfolio-demo/tree/main" rel="noopener noreferrer" target="_blank">💻 GitHub</a>
-</div>
-</div>
-</div>
-<div class="project-body">
-<div class="project-meta">
-<span class="project-rank">Priority 5</span>
-<span class="priority-badge">Portfolio + Accessibility</span>
-</div>
-<h3>Portfolio Website</h3>
-<p>A personal portfolio website built to present projects, skills, and contact pathways with semantic structure, accessible navigation, theme switching, smooth scrolling, and mobile-first performance.</p>
-<ul aria-label="Portfolio Website highlights" class="project-highlights"><li>Shows accessibility thinking, presentation clarity, and recruiter-friendly organization</li><li>Useful supporting evidence for semantic HTML, responsive layout, and frontend polish</li></ul>
-<div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Accessibility</span><span class="tech-tag">Responsive UI</span></div>
-<div class="project-links-row">
-<a class="project-link" href="https://portfolio-demo-rosy-ten.vercel.app/" rel="noopener noreferrer" target="_blank">🌐 Live Demo ↗</a>
-<a class="project-link" href="https://github.com/kolapodev-a11y/Portfolio-demo/tree/main" rel="noopener noreferrer" target="_blank">👨‍💻 View Code ↗</a>
-</div>
-</div>
-</article><article class="project-card reveal">
-<div class="project-image-wrapper">
-<img alt="Blog Website project preview" decoding="async" fetchpriority="low" height="640" loading="lazy" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" src="images/optimized/blog.webp" width="640"/>
-<div class="project-overlay">
-<div class="overlay-links">
-<a class="overlay-btn live" href="https://kpzblogwebsite.netlify.app/" rel="noopener noreferrer" target="_blank">🔗 Live Demo</a>
-<a class="overlay-btn github" href="https://github.com/victorkolapo84-code/My-Blog-site" rel="noopener noreferrer" target="_blank">💻 GitHub</a>
-</div>
-</div>
-</div>
-<div class="project-body">
-<div class="project-meta">
-<span class="project-rank">Priority 6</span>
-<span class="priority-badge">Content Platform</span>
-</div>
-<h3>Blog Website</h3>
-<p>
-                A content-driven blog interface featuring structured article cards, readable layouts,
-                and lightweight front-end interactions. It supports strong visual organization and simple,
-                fast reading experiences.
-              </p>
-<ul aria-label="Blog Website highlights" class="project-highlights">
-<li>Useful supporting project for content UI and layout presentation</li>
-<li>Shows content UI structure, readability, and lightweight front-end interaction</li>
-</ul>
-<div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Content UI</span></div>
-<div class="project-links-row">
-<a class="project-link" href="https://kpzblogwebsite.netlify.app/" rel="noopener noreferrer" target="_blank">🌐 Live Demo ↗</a>
-<a class="project-link" href="https://github.com/victorkolapo84-code/My-Blog-site" rel="noopener noreferrer" target="_blank">👨‍💻 View Code ↗</a>
-</div>
-</div>
-</article></div>
-</div>
-</section>
-<section class="contact" id="contact">
-<div class="section-header reveal">
-<div class="section-tag">Say Hello</div>
-<h2 class="section-title">Get In <span>Touch</span></h2>
-<p class="contact-lead">If you would like to work together, you can reach me directly for React frontend, responsive UI, and product-focused web development opportunities.</p>
-</div>
-<div class="contact-container">
-<div class="contact-info reveal">
-<h3>Let's Work Together 🤝</h3>
-<p>I'm interested in opportunities where I can contribute to product interfaces, collaborate with teams, improve user experience, and keep growing through meaningful frontend work with room for full-stack contribution.</p>
-<div class="contact-methods">
-<a class="contact-method" href="/cdn-cgi/l/email-protection#cfa4a0a3aebfa0abaab98fa8a2aea6a3e1aca0a2">
-<div class="contact-method-icon">📧</div>
-<div class="contact-method-text"><strong>Email</strong><span><span class="__cf_email__" data-cfemail="c7aca8aba6b7a8a3a2b187a0aaa6aeabe9a4a8aa">[email protected]</span></span></div>
-</a>
-<a class="contact-method" href="https://wa.me/2349050911921" rel="noopener noreferrer" target="_blank">
-<div class="contact-method-icon">💬</div>
-<div class="contact-method-text"><strong>WhatsApp</strong><span>Chat with me on WhatsApp</span></div>
-</a>
-<a class="contact-method" href="https://www.linkedin.com/in/kolapo-ofobutu-b68892382" rel="noopener noreferrer" target="_blank">
-<div class="contact-method-icon">💼</div>
-<div class="contact-method-text"><strong>LinkedIn</strong><span>View LinkedIn Profile</span></div>
-</a>
-<a class="contact-method" href="https://github.com/kolapodev-a11y" rel="noopener noreferrer" target="_blank">
-<div class="contact-method-icon">🌐</div>
-<div class="contact-method-text"><strong>GitHub</strong><span>View GitHub Profile</span></div>
-</a>
-</div>
-</div>
-<div class="contact-form-card reveal">
-<h3>Send a Message 💌</h3>
-<form id="contact-form" novalidate="">
-<div class="form-group">
-<label for="name">Your Name</label>
-<input autocomplete="name" id="name" name="name" placeholder="e.g. John Doe" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="email">Email Address</label>
-<input autocomplete="email" id="email" name="email" placeholder="e.g. john@example.com" required="" type="email"/>
-</div>
-<div class="form-group">
-<label for="message">Message</label>
-<textarea id="message" name="message" placeholder="Tell me about your role, project, or idea..." required=""></textarea>
-</div>
-<button class="form-submit-btn" id="form-submit-btn" type="submit">🚀 Send Message</button>
-</form>
-</div>
-</div>
-</section>
-</main>
-<footer class="footer">
-<div class="footer-content">
-<div class="footer-top">
-<a class="footer-logo" data-scroll="" href="#home">&lt;Peezutech /&gt;</a>
-<nav aria-label="Footer" class="footer-links">
-<a data-scroll="" href="#home">Home</a>
-<a data-scroll="" href="#snapshot">Highlights</a>
-<a data-scroll="" href="#about">About</a>
-<a data-scroll="" href="#projects">Projects</a>
-<a data-scroll="" href="#contact">Contact</a>
-</nav>
-</div>
-<div class="footer-bottom">
-<p>© <span id="current-year"></span> Portfolio by <a href="https://wa.me/2349050911921" rel="noopener noreferrer" target="_blank">Peezutech</a>. Built for responsive UI, accessibility, and recruiter-friendly browsing.</p>
-</div>
-</div>
-</footer>
-<button aria-label="Back to top" class="back-to-top" hidden="" id="back-to-top" type="button">↑</button>
-<div class="toast success" hidden="" id="toast"><span id="toast-icon">✅</span><span id="toast-message"></span></div>
-<noscript>
-<div style="padding:1rem; text-align:center; background:#fee2e2; color:#7f1d1d; font-weight:700;">
-      This portfolio works best with JavaScript enabled.
+      <button class="hamburger" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-</noscript>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer="" src="app.js"></script>
-<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"></script>
+  </nav>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-top">
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch theme" title="Toggle theme" type="button">
+        <span class="theme-toggle-icon" aria-hidden="true">☀️</span>
+        <span class="theme-toggle-text">Light</span>
+      </button>
+    </div>
+    <a href="#home" data-scroll>Home</a>
+    <a href="#about" data-scroll>About</a>
+    <a href="#skills" data-scroll>Skills</a>
+    <a href="#projects" data-scroll>Projects</a>
+    <a href="#contact" data-scroll>Contact</a>
+  </div>
+
+  <main id="main-content">
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-container">
+        <div class="hero-copy reveal visible-on-load">
+          <p class="hero-badge"><span class="dot"></span>Frontend-focused portfolio</p>
+          <h1>Kolapo Victor builds responsive, accessible, and product-ready web interfaces.</h1>
+          <p class="hero-role"><span id="typed-text">Frontend Developer</span><span class="typed-cursor">|</span></p>
+          <p class="hero-text">
+            Frontend developer focused on React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, API integration, accessibility, and performance-aware UI implementation.
+          </p>
+          <div class="hero-tags" aria-label="Core stack">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>JavaScript</span>
+            <span>Tailwind CSS</span>
+            <span>REST APIs</span>
+            <span>Accessibility</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-scroll>View Projects</a>
+            <a href="mailto:peezutech@gmail.com" class="btn btn-secondary">Email Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal visible-on-load" aria-hidden="true">
+          <div class="profile-ring">
+            <div class="profile-core">👨‍💻</div>
+            <div class="float-card card-a">⚛️ React UI</div>
+            <div class="float-card card-b">🟦 TypeScript</div>
+            <div class="float-card card-c">⚡ Frontend Performance</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-header reveal">
+        <p class="section-label">About</p>
+        <h2>Frontend-first, product-aware, and ready for modern web teams.</h2>
+        <p class="section-copy">
+          I build clean user interfaces for web products and focus on responsive layout, component-based UI, accessibility, API-driven workflows, and smooth user experience across devices.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <article class="panel reveal">
+          <h3>What I focus on</h3>
+          <ul class="list">
+            <li>Responsive interfaces with React, JavaScript, HTML, and CSS</li>
+            <li>TypeScript-ready frontend workflows for scalable UI development</li>
+            <li>Accessible and performance-aware product experiences</li>
+            <li>Frontend integration with APIs, auth flows, and backend-supported features</li>
+          </ul>
+        </article>
+
+        <article class="panel reveal">
+          <h3>Best-fit roles</h3>
+          <ul class="list">
+            <li>Frontend Developer</li>
+            <li>React Developer</li>
+            <li>UI Engineer</li>
+            <li>Frontend-focused Product Engineer</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-header reveal">
+        <p class="section-label">Skills</p>
+        <h2>Core frontend stack</h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <h3>Languages & Core</h3>
+          <p>TypeScript, JavaScript (ES6+), HTML5, CSS3, DOM manipulation</p>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Frameworks & UI</h3>
+          <p>React, Tailwind CSS, responsive design, reusable component-based UI</p>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Tools & Workflow</h3>
+          <p>Vite, Webpack, Git, GitHub, Figma-to-code workflow, cross-browser testing</p>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Frontend Focus</h3>
+          <p>REST API integration, accessibility, performance optimization, clean user flows</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-header reveal">
+        <p class="section-label">Projects</p>
+        <h2>Selected frontend work</h2>
+        <p class="section-copy">
+          These projects show responsive UI implementation, product-focused layout decisions, interface logic, and real-world frontend collaboration with backend workflows where needed.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal project-featured">
+          <div class="project-media">
+            <img src="images/optimized/peezuhub.webp" alt="PeezuHub marketplace project preview" width="640" height="640" loading="lazy" decoding="async" />
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <span class="project-badge">Featured</span>
+              <span class="project-stack">React • Tailwind CSS • API-driven UI</span>
+            </div>
+            <h3>PeezuHub</h3>
+            <p>
+              Marketplace interface built for real product flows including authentication, listings, search and browsing, messaging, notifications, uploads, and payment-related experiences.
+            </p>
+            <div class="tech-tags">
+              <span>React</span><span>Vite</span><span>Tailwind CSS</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://peezuhub.name.ng" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/kolapodev-a11y/PeezuHub_New/tree/main" target="_blank" rel="noopener noreferrer">Frontend Code</a>
+              <a href="https://github.com/kolapodev-a11y/Peezuhub-backend/tree/main" target="_blank" rel="noopener noreferrer">Backend Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/optimized/land.webp" alt="Landing Page project preview" width="640" height="640" loading="lazy" decoding="async" />
+          </div>
+          <div class="project-body">
+            <h3>Landing Page Website</h3>
+            <p>Frontend marketing page focused on clean sections, polished hierarchy, and conversion-ready product presentation.</p>
+            <div class="tech-tags"><span>React</span><span>Vite</span><span>Responsive UI</span></div>
+            <div class="project-links">
+              <a href="https://landing-page-demo-mu-six.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/victorkolapo84-code/Landing-page-demo" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/optimized/ecomm.webp" alt="E-commerce website project preview" width="640" height="640" loading="lazy" decoding="async" />
+          </div>
+          <div class="project-body">
+            <h3>Fortunehub's Hub</h3>
+            <p>Responsive e-commerce interface with storefront browsing, checkout-related workflows, and business-focused user flow.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="https://fortunehub.name.ng" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/optimized/quiz.webp" alt="Quiz website project preview" width="640" height="640" loading="lazy" decoding="async" />
+          </div>
+          <div class="project-body">
+            <h3>Quiz Website</h3>
+            <p>Interactive learning interface with timed sessions, multi-subject mode, and frontend logic for user-driven progress.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="https://koleepeezuquiz.name.ng" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/optimized/port.webp" alt="Portfolio website project preview" width="640" height="640" loading="lazy" decoding="async" />
+          </div>
+          <div class="project-body">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio focused on accessibility, responsive layout, smooth navigation, and clear frontend presentation.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="https://portfolio-demo-rosy-ten.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/kolapodev-a11y/Portfolio-demo/tree/main" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-media">
+            <img src="images/optimized/blog.webp" alt="Blog website project preview" width="640" height="640" loading="lazy" decoding="async" />
+          </div>
+          <div class="project-body">
+            <h3>Blog Website</h3>
+            <p>Content-focused interface showing readable layout, visual structure, and lightweight front-end interaction.</p>
+            <div class="tech-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="https://kpzblogwebsite.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/victorkolapo84-code/My-Blog-site" target="_blank" rel="noopener noreferrer">Code</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-header reveal">
+        <p class="section-label">Contact</p>
+        <h2>Let’s build something useful.</h2>
+        <p class="section-copy">Open to frontend, React, UI engineering, and product-focused web opportunities.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="panel reveal">
+          <h3>Direct links</h3>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:peezutech@gmail.com">📧 peezutech@gmail.com</a>
+            <a class="contact-link" href="tel:+2348069433374">📱 +234 806 943 3374</a>
+            <a class="contact-link" href="https://github.com/kolapodev-a11y" target="_blank" rel="noopener noreferrer">🌐 GitHub</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/kolapo-ofobutu-b68892382" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+            <a class="contact-link" href="https://wa.me/2348069433374" target="_blank" rel="noopener noreferrer">💬 WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <h3>Send a message</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button id="form-submit-btn" class="btn btn-primary form-submit-btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <a class="footer-logo" href="#home" data-scroll>&lt;Peezutech /&gt;</a>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#home" data-scroll>Home</a>
+        <a href="#about" data-scroll>About</a>
+        <a href="#skills" data-scroll>Skills</a>
+        <a href="#projects" data-scroll>Projects</a>
+        <a href="#contact" data-scroll>Contact</a>
+      </nav>
+      <p class="footer-copy">© <span id="current-year"></span> Kolapo Victor. Frontend Developer.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" type="button" hidden>↑</button>
+  <div id="toast" class="toast success" hidden><span id="toast-icon">✅</span><span id="toast-message"></span></div>
+
+  <script defer src="app.js"></script>
 </body>
 </html>

@@ -18,14 +18,14 @@
   const contactForm = $('#contact-form');
   const submitButton = $('#form-submit-btn');
   const navAnchors = $$('a[href^="#"]');
-  const primaryNavAnchors = $$('a[href^="#home"], a[href^="#about"], a[href^="#projects"], a[href^="#contact"]')
+  const primaryNavAnchors = $$('a[href^="#home"], a[href^="#about"], a[href^="#skills"], a[href^="#projects"], a[href^="#contact"]')
     .filter((node) => node.closest('.nav-links, .mobile-menu, .footer-links'));
 
   const typedWords = [
-    'React Frontend Developer',
-    'Responsive UI Builder',
-    'JavaScript & API Integrator',
-    'Frontend Problem Solver'
+    'Frontend Developer',
+    'React Developer',
+    'TypeScript Frontend Developer',
+    'UI Engineer'
   ];
 
   let typedWordIndex = 0;
@@ -101,16 +101,15 @@
     toast.hidden = false;
     toastMessage.textContent = message;
     toastIcon.textContent = type === 'success' ? '✅' : '❌';
-
     window.clearTimeout(toastTimer);
     toastTimer = window.setTimeout(() => {
       toast.hidden = true;
-    }, 4200);
+    }, 4000);
   }
 
   function updateScrollUI() {
     const y = window.scrollY || window.pageYOffset;
-    if (navbar) navbar.classList.toggle('scrolled', y > 50);
+    if (navbar) navbar.classList.toggle('scrolled', y > 40);
     if (backToTop) backToTop.hidden = y <= 500;
     ticking = false;
   }
@@ -123,17 +122,17 @@
 
   function startTypedText() {
     if (!typedText) return;
-
     const currentWord = typedWords[typedWordIndex];
+
     if (!deleting) {
       typedCharIndex += 1;
       typedText.textContent = currentWord.slice(0, typedCharIndex);
       if (typedCharIndex === currentWord.length) {
         deleting = true;
-        window.setTimeout(startTypedText, 1500);
+        window.setTimeout(startTypedText, 1400);
         return;
       }
-      window.setTimeout(startTypedText, 80);
+      window.setTimeout(startTypedText, 70);
       return;
     }
 
@@ -142,15 +141,21 @@
     if (typedCharIndex === 0) {
       deleting = false;
       typedWordIndex = (typedWordIndex + 1) % typedWords.length;
-      window.setTimeout(startTypedText, 250);
+      window.setTimeout(startTypedText, 220);
       return;
     }
-    window.setTimeout(startTypedText, 40);
+    window.setTimeout(startTypedText, 35);
   }
 
   function initRevealObserver() {
     const revealItems = $$('.reveal');
     if (!revealItems.length) return;
+
+    revealItems.forEach((item) => {
+      if (item.classList.contains('visible-on-load')) {
+        item.classList.add('visible');
+      }
+    });
 
     if (!('IntersectionObserver' in window)) {
       revealItems.forEach((item) => item.classList.add('visible'));
@@ -169,7 +174,9 @@
       { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
     );
 
-    revealItems.forEach((item) => observer.observe(item));
+    revealItems.forEach((item) => {
+      if (!item.classList.contains('visible-on-load')) observer.observe(item);
+    });
   }
 
   function initSectionObserver() {
@@ -179,9 +186,7 @@
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveNav(entry.target.id);
-          }
+          if (entry.isIntersecting) setActiveNav(entry.target.id);
         });
       },
       { threshold: 0.45, rootMargin: '-20% 0px -35% 0px' }
@@ -204,12 +209,12 @@
       };
 
       if (!payload.name || !payload.email || !payload.message) {
-        showToast('Please fill in your name, email, and message.', 'error');
+        showToast('Please complete all form fields.', 'error');
         return;
       }
 
       submitButton.disabled = true;
-      submitButton.textContent = '⏳ Sending...';
+      submitButton.textContent = 'Sending...';
 
       try {
         const response = await fetch('/api/contact', {
@@ -222,29 +227,27 @@
           let message = 'Failed to send message.';
           try {
             const data = await response.json();
-            if (data && data.error) message = data.error;
+            if (data?.error) message = data.error;
           } catch (error) {}
           throw new Error(message);
         }
 
         contactForm.reset();
-        showToast("Message sent! I'll get back to you soon. 🎉", 'success');
+        showToast("Message sent successfully.", 'success');
       } catch (error) {
-        const subject = encodeURIComponent(`Message from ${payload.name}`);
-        const bodyText = encodeURIComponent(payload.message);
-        window.location.href = `mailto:kolapodev@gmail.com?subject=${subject}&body=${bodyText}`;
-        showToast("Couldn't send automatically — opening your email app instead.", 'error');
+        const subject = encodeURIComponent(`Portfolio inquiry from ${payload.name}`);
+        const bodyText = encodeURIComponent(`${payload.message}\n\nReply to: ${payload.email}`);
+        window.location.href = `mailto:peezutech@gmail.com?subject=${subject}&body=${bodyText}`;
+        showToast('Opening email app as fallback.', 'error');
       } finally {
         submitButton.disabled = false;
-        submitButton.textContent = '🚀 Send Message';
+        submitButton.textContent = 'Send Message';
       }
     });
   }
 
   function initEvents() {
-    if (menuToggle) {
-      menuToggle.addEventListener('click', toggleMenu, { passive: true });
-    }
+    if (menuToggle) menuToggle.addEventListener('click', toggleMenu, { passive: true });
 
     themeButtons.forEach((button) => {
       button.addEventListener('click', () => {
@@ -272,7 +275,7 @@
 
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) closeMenu();
+      if (window.innerWidth > 860) closeMenu();
     }, { passive: true });
   }
 
