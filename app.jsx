@@ -42,7 +42,7 @@ const PROJECTS = [
     description: "A fully functional e-commerce platform with product browsing, cart management, a streamlined checkout experience, and SEO optimization.",
     tech: ["HTML", "CSS", "JavaScript", "Node.js (Express)", "MongoDB", "Payment Integration"],
     image: "images/ecomm.jpg",
-    live: "https://fortunehub.name.ng",
+    live: "https://fortunehub.ng",
     github: "https://www.linkedin.com/in/kolapo-ofobutu-b68892382",
   },
   {
